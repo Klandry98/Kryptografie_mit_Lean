@@ -1,0 +1,8 @@
+{"plugins": [],
+ "package": "aes_lean",
+ "options": {"autoImplicit": false},
+ "name": "AES.SBox",
+ "isModule": false,
+ "importArts":
+ {"AES.Types": ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Types.olean"]},
+ "dynlibs": []}

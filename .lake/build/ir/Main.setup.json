@@ -1,0 +1,15 @@
+{"plugins": [],
+ "package": "aes_lean",
+ "options": {"autoImplicit": false},
+ "name": "Main",
+ "isModule": false,
+ "importArts":
+ {"AES.Types": ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Types.olean"],
+  "AES.Transforms":
+  ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.olean"],
+  "AES.SBox": ["/home/landry/aes_lean/.lake/build/lib/lean/AES/SBox.olean"],
+  "AES.KeyExpansion":
+  ["/home/landry/aes_lean/.lake/build/lib/lean/AES/KeyExpansion.olean"],
+  "AES.Cipher":
+  ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Cipher.olean"]},
+ "dynlibs": []}

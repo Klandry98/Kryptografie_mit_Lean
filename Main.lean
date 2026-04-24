@@ -1,7 +1,4 @@
-/-
-  Main.lean
-  Smoke-Tests und AESAVS-Validierung
--/
+
 import AES.Cipher
 
 /-- NIST AESAVS GFSbox Test Vector #1 -/

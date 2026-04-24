@@ -1,0 +1,7 @@
+{"plugins": [],
+ "package": "aes_lean",
+ "options": {"autoImplicit": false},
+ "name": "AES.Types",
+ "isModule": false,
+ "importArts": {},
+ "dynlibs": []}
