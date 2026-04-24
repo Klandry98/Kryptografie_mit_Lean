@@ -2,14 +2,11 @@ import Lake
 open Lake DSL
 
 package aes_lean where
-  leanOptions := #[
-    -- Hier wird die Option korrekt als Paar (Name, Wert) angegeben
-    ⟨`autoImplicit, false⟩
+  leanOptions := #[⟨`autoImplicit, false⟩]
 
-  ]
-require mathlib from git
-  "https://github.com/leanprover-community/mathlib4"
 @[default_target]
-lean_lib AES
+lean_lib AES where
+  roots := #[`AES.Types, `AES.SBox, `AES.Transforms, `AES.KeyExpansion, `AES.Cipher]
+
 lean_exe aes_main where
   root := `Main
