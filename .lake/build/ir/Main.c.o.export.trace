@@ -1,17 +1,17 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "7d6b1508300262e1.o",
+ "outputs": "bdd148ce8eb4d73d.o",
  "log":
  [{"message":
    ".> /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/clang -c -o /home/landry/aes_lean/.lake/build/ir/Main.c.o.export /home/landry/aes_lean/.lake/build/ir/Main.c -I /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/include -fstack-clash-protection -fdata-sections -ffunction-sections -fPIC -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2 -nostdinc -isystem /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
    "level": "trace"}],
  "inputs":
  [["Main:c",
-   [["/home/landry/aes_lean/.lake/build/ir/Main.c", "bf69965e41e07675"],
+   [["/home/landry/aes_lean/.lake/build/ir/Main.c", "7b0503ee631aeab7"],
     ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
      "2c8d2623007dfc36"]]],
   ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
    "2c8d2623007dfc36"],
   ["traceArgs: #[-O3, -DNDEBUG, -DLEAN_EXPORTING]", "c1efb66122fb2b9a"],
   ["x86_64-unknown-linux-gnu", "53a0e8937c307c28"]],
- "depHash": "04da91a7b264f2b8"}
+ "depHash": "611564d6663872de"}

@@ -14,15 +14,13 @@ def invSubBytes (s : State) : State := s.map (fun col => col.map invSubByte)
 -- ShiftRows / InvShiftRows
 
 def getRow (s : State) (i : Nat) : Array Byte :=
-  #[s[0]![i]!, s[1]![i]!, s[2]![i]!, s[3]![i]!]
+  Array.ofFn (n := 4) fun j => s[j.val]![i]!
 
 def stateFromRows (r0 r1 r2 r3 : Array Byte) : State :=
-  #[
-    #[r0[0]!, r1[0]!, r2[0]!, r3[0]!],
-    #[r0[1]!, r1[1]!, r2[1]!, r3[1]!],
-    #[r0[2]!, r1[2]!, r2[2]!, r3[2]!],
-    #[r0[3]!, r1[3]!, r2[3]!, r3[3]!]
-  ]
+  let rows := #[r0, r1, r2, r3]
+  Array.ofFn (n := 4) fun j =>
+    Array.ofFn (n := 4) fun i =>
+      rows[i.val]![j.val]!
 
 def rotateLeft (row : Array Byte) (n : Nat) : Array Byte :=
   Array.ofFn (n := 4) fun i => row[(i.val + n) % 4]!
@@ -52,19 +50,15 @@ def xtime (b : Byte) : Byte :=
   if b &&& 0x80 != 0 then shifted ^^^ 0x1b else shifted
 
 /-- Allgemeine Multiplikation in GF(2^8) -/
-def gfMul (a b : Byte) : Byte := Id.run do
-  let mut result : Byte := 0
-  let mut aa := a
-  let mut bb := b
-  for _ in [:8] do
-    if bb &&& 1 != 0 then
-      result := result ^^^ aa
-    let hiBit := aa &&& 0x80
-    aa := aa <<< 1
-    if hiBit != 0 then
-      aa := aa ^^^ 0x1b
-    bb := bb >>> 1
-  return result
+def gfMul (a b : Byte) : Byte :=
+  let step (acc : Byte × Byte × Byte) (_ : Nat) : Byte × Byte × Byte :=
+    let (result, aa, bb) := acc
+    let result' := if bb &&& 1 != 0 then result ^^^ aa else result
+    let hiBit   := aa &&& 0x80
+    let aa'     := (aa <<< 1) ^^^ (if hiBit != 0 then 0x1b else 0)
+    (result', aa', bb >>> 1)
+  let (result, _, _) := (List.range 8).foldl step (0, a, b)
+  result
 
 def mixColumn (col : Array Byte) : Array Byte :=
   let s0 := col[0]!; let s1 := col[1]!

@@ -17,24 +17,24 @@ lean_object* lean_mk_empty_array_with_capacity(lean_object*);
 lean_object* lean_array_push(lean_object*, lean_object*);
 extern uint8_t l_instInhabitedUInt8;
 lean_object* lean_array_get(lean_object*, lean_object*, lean_object*);
-uint8_t lean_nat_dec_lt(lean_object*, lean_object*);
 lean_object* lean_nat_mul(lean_object*, lean_object*);
-lean_object* lean_nat_add(lean_object*, lean_object*);
-lean_object* l_Array_instInhabited(lean_object*);
-lean_object* lean_nat_sub(lean_object*, lean_object*);
 lean_object* lean_array_get_borrowed(lean_object*, lean_object*, lean_object*);
-lean_object* lean_nat_mod(lean_object*, lean_object*);
-uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
-uint8_t lean_uint8_xor(uint8_t, uint8_t);
-lean_object* l_Array_ofFn___redArg(lean_object*, lean_object*);
+lean_object* lean_nat_add(lean_object*, lean_object*);
+lean_object* l_Array_append___redArg(lean_object*, lean_object*);
 size_t lean_array_size(lean_object*);
 uint8_t lean_usize_dec_lt(size_t, size_t);
 lean_object* lean_array_uget(lean_object*, size_t);
 lean_object* lean_array_uset(lean_object*, size_t, lean_object*);
 uint8_t lp_aes__lean_subByte(uint8_t);
 size_t lean_usize_add(size_t, size_t);
+uint8_t lean_uint8_xor(uint8_t, uint8_t);
+lean_object* l_Array_ofFn___redArg(lean_object*, lean_object*);
+lean_object* l_Array_instInhabited(lean_object*);
+lean_object* l_List_range(lean_object*);
+lean_object* lean_nat_sub(lean_object*, lean_object*);
+lean_object* lean_nat_mod(lean_object*, lean_object*);
+uint8_t lean_nat_dec_eq(lean_object*, lean_object*);
 lean_object* lean_nat_shiftr(lean_object*, lean_object*);
-lean_object* l_Array_append___redArg(lean_object*, lean_object*);
 static const lean_array_object lp_aes__lean_rcon___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*10, .m_other = 0, .m_tag = 246}, .m_size = 10, .m_capacity = 10, .m_data = {((lean_object*)(((size_t)(1) << 1) | 1)),((lean_object*)(((size_t)(2) << 1) | 1)),((lean_object*)(((size_t)(4) << 1) | 1)),((lean_object*)(((size_t)(8) << 1) | 1)),((lean_object*)(((size_t)(16) << 1) | 1)),((lean_object*)(((size_t)(32) << 1) | 1)),((lean_object*)(((size_t)(64) << 1) | 1)),((lean_object*)(((size_t)(128) << 1) | 1)),((lean_object*)(((size_t)(27) << 1) | 1)),((lean_object*)(((size_t)(54) << 1) | 1))}};
 static const lean_object* lp_aes__lean_rcon___closed__0 = (const lean_object*)&lp_aes__lean_rcon___closed__0_value;
 LEAN_EXPORT const lean_object* lp_aes__lean_rcon = (const lean_object*)&lp_aes__lean_rcon___closed__0_value;
@@ -48,30 +48,17 @@ LEAN_EXPORT lean_object* lp_aes__lean_xorWord___lam__0___boxed(lean_object*, lea
 LEAN_EXPORT lean_object* lp_aes__lean_xorWord(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_aes__lean_extractWord(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_aes__lean_extractWord___boxed(lean_object*, lean_object*);
-static lean_once_cell_t lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
-static lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0;
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg(lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg___boxed(lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg(lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
-static const lean_array_object lp_aes__lean_expandKey___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_array_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 246}, .m_size = 0, .m_capacity = 0, .m_data = {}};
-static const lean_object* lp_aes__lean_expandKey___closed__0 = (const lean_object*)&lp_aes__lean_expandKey___closed__0_value;
-static const lean_ctor_object lp_aes__lean_expandKey___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)(((size_t)(4) << 1) | 1)),((lean_object*)(((size_t)(1) << 1) | 1))}};
-static const lean_object* lp_aes__lean_expandKey___closed__1 = (const lean_object*)&lp_aes__lean_expandKey___closed__1_value;
-static const lean_ctor_object lp_aes__lean_expandKey___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(4) << 1) | 1)),((lean_object*)(((size_t)(44) << 1) | 1)),((lean_object*)(((size_t)(1) << 1) | 1))}};
-static const lean_object* lp_aes__lean_expandKey___closed__2 = (const lean_object*)&lp_aes__lean_expandKey___closed__2_value;
-static const lean_ctor_object lp_aes__lean_expandKey___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*3 + 0, .m_other = 3, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)(((size_t)(11) << 1) | 1)),((lean_object*)(((size_t)(1) << 1) | 1))}};
-static const lean_object* lp_aes__lean_expandKey___closed__3 = (const lean_object*)&lp_aes__lean_expandKey___closed__3_value;
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__0___boxed(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__1(lean_object*, lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*);
+static lean_once_cell_t lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0;
+LEAN_EXPORT lean_object* lp_aes__lean_List_foldl___at___00expandKey_spec__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_aes__lean_List_foldl___at___00expandKey_spec__0___boxed(lean_object*, lean_object*);
+static lean_once_cell_t lp_aes__lean_expandKey___closed__0_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_aes__lean_expandKey___closed__0;
 LEAN_EXPORT lean_object* lp_aes__lean_expandKey(lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean_expandKey___boxed(lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___boxed(lean_object*, lean_object*, lean_object*, lean_object*, lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_aes__lean_rotWord(lean_object* v_w_34_){
 _start:
 {
@@ -254,270 +241,180 @@ lean_dec_ref(v_block_129_);
 return v_res_131_;
 }
 }
-static lean_object* _init_lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0(void){
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__0(lean_object* v_key_132_, lean_object* v_i_133_){
 _start:
 {
-lean_object* v___x_132_; 
-v___x_132_ = l_Array_instInhabited(lean_box(0));
-return v___x_132_;
+lean_object* v___x_134_; 
+v___x_134_ = lp_aes__lean_extractWord(v_key_132_, v_i_133_);
+return v___x_134_;
 }
 }
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg(lean_object* v___x_133_, lean_object* v_range_134_, lean_object* v_b_135_, lean_object* v_i_136_){
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__0___boxed(lean_object* v_key_135_, lean_object* v_i_136_){
 _start:
 {
-lean_object* v_stop_137_; lean_object* v_step_138_; uint8_t v___x_139_; 
-v_stop_137_ = lean_ctor_get(v_range_134_, 1);
-v_step_138_ = lean_ctor_get(v_range_134_, 2);
-v___x_139_ = lean_nat_dec_lt(v_i_136_, v_stop_137_);
-if (v___x_139_ == 0)
-{
+lean_object* v_res_137_; 
+v_res_137_ = lp_aes__lean_expandKey___lam__0(v_key_135_, v_i_136_);
 lean_dec(v_i_136_);
-return v_b_135_;
+lean_dec_ref(v_key_135_);
+return v_res_137_;
 }
-else
+}
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__1(lean_object* v___x_138_, lean_object* v___x_139_, lean_object* v_words_140_, lean_object* v_r_141_){
+_start:
 {
-lean_object* v___x_140_; lean_object* v___x_141_; lean_object* v___x_142_; lean_object* v___x_143_; lean_object* v___x_144_; lean_object* v___x_145_; lean_object* v___x_146_; lean_object* v___x_147_; lean_object* v___x_148_; lean_object* v___x_149_; lean_object* v___x_150_; lean_object* v___x_151_; lean_object* v___x_152_; lean_object* v___x_153_; lean_object* v___x_154_; lean_object* v___x_155_; lean_object* v___x_156_; lean_object* v___x_157_; 
-v___x_140_ = lean_unsigned_to_nat(4u);
-v___x_141_ = lean_obj_once(&lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0, &lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0_once, _init_lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0);
-v___x_142_ = lean_unsigned_to_nat(1u);
-v___x_143_ = lean_nat_mul(v___x_140_, v_i_136_);
-v___x_144_ = lean_array_get_borrowed(v___x_141_, v___x_133_, v___x_143_);
-v___x_145_ = lean_nat_add(v___x_143_, v___x_142_);
-v___x_146_ = lean_array_get_borrowed(v___x_141_, v___x_133_, v___x_145_);
+lean_object* v_i_142_; lean_object* v___x_143_; lean_object* v___x_144_; lean_object* v___x_145_; lean_object* v___x_146_; lean_object* v___x_147_; lean_object* v___x_148_; lean_object* v___x_149_; lean_object* v___x_150_; lean_object* v___x_151_; lean_object* v___x_152_; lean_object* v___x_153_; lean_object* v___x_154_; lean_object* v___x_155_; 
+v_i_142_ = lean_nat_mul(v___x_138_, v_r_141_);
+v___x_143_ = lean_array_get_borrowed(v___x_139_, v_words_140_, v_i_142_);
+v___x_144_ = lean_unsigned_to_nat(1u);
+v___x_145_ = lean_nat_add(v_i_142_, v___x_144_);
+v___x_146_ = lean_array_get_borrowed(v___x_139_, v_words_140_, v___x_145_);
 lean_dec(v___x_145_);
-v___x_147_ = lean_unsigned_to_nat(2u);
-v___x_148_ = lean_nat_add(v___x_143_, v___x_147_);
-v___x_149_ = lean_array_get_borrowed(v___x_141_, v___x_133_, v___x_148_);
-lean_dec(v___x_148_);
-v___x_150_ = lean_unsigned_to_nat(3u);
-v___x_151_ = lean_nat_add(v___x_143_, v___x_150_);
-lean_dec(v___x_143_);
-v___x_152_ = lean_array_get_borrowed(v___x_141_, v___x_133_, v___x_151_);
-lean_dec(v___x_151_);
-lean_inc(v___x_144_);
-v___x_153_ = l_Array_append___redArg(v___x_144_, v___x_146_);
-v___x_154_ = l_Array_append___redArg(v___x_153_, v___x_149_);
-v___x_155_ = l_Array_append___redArg(v___x_154_, v___x_152_);
-v___x_156_ = lean_array_push(v_b_135_, v___x_155_);
-v___x_157_ = lean_nat_add(v_i_136_, v_step_138_);
-lean_dec(v_i_136_);
-v_b_135_ = v___x_156_;
-v_i_136_ = v___x_157_;
+lean_inc(v___x_143_);
+v___x_147_ = l_Array_append___redArg(v___x_143_, v___x_146_);
+v___x_148_ = lean_unsigned_to_nat(2u);
+v___x_149_ = lean_nat_add(v_i_142_, v___x_148_);
+v___x_150_ = lean_array_get_borrowed(v___x_139_, v_words_140_, v___x_149_);
+lean_dec(v___x_149_);
+v___x_151_ = l_Array_append___redArg(v___x_147_, v___x_150_);
+v___x_152_ = lean_unsigned_to_nat(3u);
+v___x_153_ = lean_nat_add(v_i_142_, v___x_152_);
+lean_dec(v_i_142_);
+v___x_154_ = lean_array_get_borrowed(v___x_139_, v_words_140_, v___x_153_);
+lean_dec(v___x_153_);
+v___x_155_ = l_Array_append___redArg(v___x_151_, v___x_154_);
+return v___x_155_;
+}
+}
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey___lam__1___boxed(lean_object* v___x_156_, lean_object* v___x_157_, lean_object* v_words_158_, lean_object* v_r_159_){
+_start:
+{
+lean_object* v_res_160_; 
+v_res_160_ = lp_aes__lean_expandKey___lam__1(v___x_156_, v___x_157_, v_words_158_, v_r_159_);
+lean_dec(v_r_159_);
+lean_dec_ref(v_words_158_);
+lean_dec_ref(v___x_157_);
+lean_dec(v___x_156_);
+return v_res_160_;
+}
+}
+static lean_object* _init_lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0(void){
+_start:
+{
+lean_object* v___x_161_; 
+v___x_161_ = l_Array_instInhabited(lean_box(0));
+return v___x_161_;
+}
+}
+LEAN_EXPORT lean_object* lp_aes__lean_List_foldl___at___00expandKey_spec__0(lean_object* v_x_162_, lean_object* v_x_163_){
+_start:
+{
+if (lean_obj_tag(v_x_163_) == 0)
+{
+return v_x_162_;
+}
+else
+{
+lean_object* v_head_164_; lean_object* v_tail_165_; lean_object* v___x_166_; lean_object* v___x_167_; lean_object* v_j_168_; lean_object* v___x_169_; lean_object* v___x_170_; lean_object* v_prev_171_; lean_object* v___x_172_; lean_object* v_back_173_; lean_object* v___x_174_; lean_object* v___x_175_; uint8_t v___x_176_; 
+v_head_164_ = lean_ctor_get(v_x_163_, 0);
+v_tail_165_ = lean_ctor_get(v_x_163_, 1);
+v___x_166_ = lean_unsigned_to_nat(4u);
+v___x_167_ = lean_obj_once(&lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0, &lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0_once, _init_lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0);
+v_j_168_ = lean_nat_add(v_head_164_, v___x_166_);
+v___x_169_ = lean_unsigned_to_nat(1u);
+v___x_170_ = lean_nat_sub(v_j_168_, v___x_169_);
+v_prev_171_ = lean_array_get_borrowed(v___x_167_, v_x_162_, v___x_170_);
+lean_dec(v___x_170_);
+v___x_172_ = lean_nat_sub(v_j_168_, v___x_166_);
+v_back_173_ = lean_array_get_borrowed(v___x_167_, v_x_162_, v___x_172_);
+lean_dec(v___x_172_);
+v___x_174_ = lean_nat_mod(v_j_168_, v___x_166_);
+v___x_175_ = lean_unsigned_to_nat(0u);
+v___x_176_ = lean_nat_dec_eq(v___x_174_, v___x_175_);
+lean_dec(v___x_174_);
+if (v___x_176_ == 0)
+{
+lean_object* v___x_177_; lean_object* v___x_178_; 
+lean_dec(v_j_168_);
+lean_inc(v_prev_171_);
+lean_inc(v_back_173_);
+v___x_177_ = lp_aes__lean_xorWord(v_back_173_, v_prev_171_);
+v___x_178_ = lean_array_push(v_x_162_, v___x_177_);
+v_x_162_ = v___x_178_;
+v_x_163_ = v_tail_165_;
+goto _start;
+}
+else
+{
+lean_object* v___x_180_; lean_object* v___x_181_; lean_object* v___x_182_; uint8_t v___x_183_; lean_object* v___x_184_; lean_object* v___x_185_; lean_object* v___x_186_; lean_object* v___x_187_; lean_object* v___x_188_; lean_object* v___x_189_; uint8_t v___x_190_; lean_object* v___x_191_; lean_object* v___x_192_; lean_object* v___x_193_; lean_object* v___x_194_; lean_object* v___x_195_; lean_object* v___x_196_; lean_object* v___x_197_; lean_object* v___x_198_; lean_object* v___x_199_; lean_object* v___x_200_; 
+v___x_180_ = lp_aes__lean_rotWord(v_prev_171_);
+v___x_181_ = lp_aes__lean_subWord(v___x_180_);
+lean_inc(v_back_173_);
+v___x_182_ = lp_aes__lean_xorWord(v_back_173_, v___x_181_);
+v___x_183_ = l_instInhabitedUInt8;
+v___x_184_ = ((lean_object*)(lp_aes__lean_rcon));
+v___x_185_ = lean_unsigned_to_nat(2u);
+v___x_186_ = lean_nat_shiftr(v_j_168_, v___x_185_);
+lean_dec(v_j_168_);
+v___x_187_ = lean_nat_sub(v___x_186_, v___x_169_);
+lean_dec(v___x_186_);
+v___x_188_ = lean_box(v___x_183_);
+v___x_189_ = lean_array_get(v___x_188_, v___x_184_, v___x_187_);
+lean_dec(v___x_187_);
+lean_dec(v___x_188_);
+v___x_190_ = 0;
+v___x_191_ = lean_mk_empty_array_with_capacity(v___x_166_);
+v___x_192_ = lean_array_push(v___x_191_, v___x_189_);
+v___x_193_ = lean_box(v___x_190_);
+v___x_194_ = lean_array_push(v___x_192_, v___x_193_);
+v___x_195_ = lean_box(v___x_190_);
+v___x_196_ = lean_array_push(v___x_194_, v___x_195_);
+v___x_197_ = lean_box(v___x_190_);
+v___x_198_ = lean_array_push(v___x_196_, v___x_197_);
+v___x_199_ = lp_aes__lean_xorWord(v___x_182_, v___x_198_);
+v___x_200_ = lean_array_push(v_x_162_, v___x_199_);
+v_x_162_ = v___x_200_;
+v_x_163_ = v_tail_165_;
 goto _start;
 }
 }
 }
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___boxed(lean_object* v___x_159_, lean_object* v_range_160_, lean_object* v_b_161_, lean_object* v_i_162_){
+}
+LEAN_EXPORT lean_object* lp_aes__lean_List_foldl___at___00expandKey_spec__0___boxed(lean_object* v_x_202_, lean_object* v_x_203_){
 _start:
 {
-lean_object* v_res_163_; 
-v_res_163_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg(v___x_159_, v_range_160_, v_b_161_, v_i_162_);
-lean_dec_ref(v_range_160_);
-lean_dec_ref(v___x_159_);
-return v_res_163_;
+lean_object* v_res_204_; 
+v_res_204_ = lp_aes__lean_List_foldl___at___00expandKey_spec__0(v_x_202_, v_x_203_);
+lean_dec(v_x_203_);
+return v_res_204_;
 }
 }
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg(lean_object* v_range_164_, lean_object* v_b_165_, lean_object* v_i_166_){
+static lean_object* _init_lp_aes__lean_expandKey___closed__0(void){
 _start:
 {
-lean_object* v_stop_167_; lean_object* v_step_168_; lean_object* v___y_170_; uint8_t v___x_174_; 
-v_stop_167_ = lean_ctor_get(v_range_164_, 1);
-v_step_168_ = lean_ctor_get(v_range_164_, 2);
-v___x_174_ = lean_nat_dec_lt(v_i_166_, v_stop_167_);
-if (v___x_174_ == 0)
-{
-lean_dec(v_i_166_);
-return v_b_165_;
-}
-else
-{
-lean_object* v___x_175_; lean_object* v___x_176_; lean_object* v___x_177_; lean_object* v___x_178_; lean_object* v___x_179_; lean_object* v___x_180_; lean_object* v___x_181_; lean_object* v___x_182_; lean_object* v___x_183_; uint8_t v___x_184_; 
-v___x_175_ = lean_unsigned_to_nat(1u);
-v___x_176_ = lean_obj_once(&lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0, &lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0_once, _init_lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg___closed__0);
-v___x_177_ = lean_unsigned_to_nat(4u);
-v___x_178_ = lean_unsigned_to_nat(0u);
-v___x_179_ = lean_nat_sub(v_i_166_, v___x_175_);
-v___x_180_ = lean_array_get_borrowed(v___x_176_, v_b_165_, v___x_179_);
-lean_dec(v___x_179_);
-v___x_181_ = lean_nat_sub(v_i_166_, v___x_177_);
-v___x_182_ = lean_array_get_borrowed(v___x_176_, v_b_165_, v___x_181_);
-lean_dec(v___x_181_);
-v___x_183_ = lean_nat_mod(v_i_166_, v___x_177_);
-v___x_184_ = lean_nat_dec_eq(v___x_183_, v___x_178_);
-lean_dec(v___x_183_);
-if (v___x_184_ == 0)
-{
-lean_object* v___x_185_; 
-lean_inc(v___x_180_);
-lean_inc(v___x_182_);
-v___x_185_ = lp_aes__lean_xorWord(v___x_182_, v___x_180_);
-v___y_170_ = v___x_185_;
-goto v___jp_169_;
-}
-else
-{
-lean_object* v___x_186_; lean_object* v___x_187_; uint8_t v___x_188_; lean_object* v___x_189_; lean_object* v___x_190_; lean_object* v___x_191_; lean_object* v___x_192_; lean_object* v___x_193_; lean_object* v___x_194_; uint8_t v___x_195_; lean_object* v___x_196_; lean_object* v___x_197_; lean_object* v___x_198_; lean_object* v___x_199_; lean_object* v___x_200_; lean_object* v___x_201_; lean_object* v___x_202_; lean_object* v___x_203_; lean_object* v___x_204_; lean_object* v___x_205_; 
-v___x_186_ = lp_aes__lean_rotWord(v___x_180_);
-v___x_187_ = lp_aes__lean_subWord(v___x_186_);
-v___x_188_ = l_instInhabitedUInt8;
-v___x_189_ = ((lean_object*)(lp_aes__lean_rcon));
-v___x_190_ = lean_unsigned_to_nat(2u);
-v___x_191_ = lean_nat_shiftr(v_i_166_, v___x_190_);
-v___x_192_ = lean_nat_sub(v___x_191_, v___x_175_);
-lean_dec(v___x_191_);
-v___x_193_ = lean_box(v___x_188_);
-v___x_194_ = lean_array_get(v___x_193_, v___x_189_, v___x_192_);
-lean_dec(v___x_192_);
-lean_dec(v___x_193_);
-v___x_195_ = 0;
-v___x_196_ = lean_mk_empty_array_with_capacity(v___x_177_);
-v___x_197_ = lean_array_push(v___x_196_, v___x_194_);
-v___x_198_ = lean_box(v___x_195_);
-v___x_199_ = lean_array_push(v___x_197_, v___x_198_);
-v___x_200_ = lean_box(v___x_195_);
-v___x_201_ = lean_array_push(v___x_199_, v___x_200_);
-v___x_202_ = lean_box(v___x_195_);
-v___x_203_ = lean_array_push(v___x_201_, v___x_202_);
-lean_inc(v___x_182_);
-v___x_204_ = lp_aes__lean_xorWord(v___x_182_, v___x_187_);
-v___x_205_ = lp_aes__lean_xorWord(v___x_204_, v___x_203_);
-v___y_170_ = v___x_205_;
-goto v___jp_169_;
+lean_object* v___x_205_; lean_object* v___x_206_; 
+v___x_205_ = lean_unsigned_to_nat(40u);
+v___x_206_ = l_List_range(v___x_205_);
+return v___x_206_;
 }
 }
-v___jp_169_:
-{
-lean_object* v___x_171_; lean_object* v___x_172_; 
-v___x_171_ = lean_array_push(v_b_165_, v___y_170_);
-v___x_172_ = lean_nat_add(v_i_166_, v_step_168_);
-lean_dec(v_i_166_);
-v_b_165_ = v___x_171_;
-v_i_166_ = v___x_172_;
-goto _start;
-}
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg___boxed(lean_object* v_range_206_, lean_object* v_b_207_, lean_object* v_i_208_){
+LEAN_EXPORT lean_object* lp_aes__lean_expandKey(lean_object* v_key_207_){
 _start:
 {
-lean_object* v_res_209_; 
-v_res_209_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg(v_range_206_, v_b_207_, v_i_208_);
-lean_dec_ref(v_range_206_);
-return v_res_209_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg(lean_object* v_key_210_, lean_object* v_range_211_, lean_object* v_b_212_, lean_object* v_i_213_){
-_start:
-{
-lean_object* v_stop_214_; lean_object* v_step_215_; uint8_t v___x_216_; 
-v_stop_214_ = lean_ctor_get(v_range_211_, 1);
-v_step_215_ = lean_ctor_get(v_range_211_, 2);
-v___x_216_ = lean_nat_dec_lt(v_i_213_, v_stop_214_);
-if (v___x_216_ == 0)
-{
-lean_dec(v_i_213_);
-return v_b_212_;
-}
-else
-{
-lean_object* v___x_217_; lean_object* v___x_218_; lean_object* v___x_219_; 
-v___x_217_ = lp_aes__lean_extractWord(v_key_210_, v_i_213_);
-v___x_218_ = lean_array_push(v_b_212_, v___x_217_);
-v___x_219_ = lean_nat_add(v_i_213_, v_step_215_);
-lean_dec(v_i_213_);
-v_b_212_ = v___x_218_;
-v_i_213_ = v___x_219_;
-goto _start;
-}
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg___boxed(lean_object* v_key_221_, lean_object* v_range_222_, lean_object* v_b_223_, lean_object* v_i_224_){
-_start:
-{
-lean_object* v_res_225_; 
-v_res_225_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg(v_key_221_, v_range_222_, v_b_223_, v_i_224_);
-lean_dec_ref(v_range_222_);
-lean_dec_ref(v_key_221_);
-return v_res_225_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean_expandKey(lean_object* v_key_240_){
-_start:
-{
-lean_object* v___x_241_; lean_object* v_words_242_; lean_object* v___x_243_; lean_object* v___x_244_; lean_object* v___x_245_; lean_object* v___x_246_; lean_object* v___x_247_; lean_object* v___x_248_; lean_object* v___x_249_; 
-v___x_241_ = lean_unsigned_to_nat(0u);
-v_words_242_ = ((lean_object*)(lp_aes__lean_expandKey___closed__0));
-v___x_243_ = lean_unsigned_to_nat(4u);
-v___x_244_ = ((lean_object*)(lp_aes__lean_expandKey___closed__1));
-v___x_245_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg(v_key_240_, v___x_244_, v_words_242_, v___x_241_);
-v___x_246_ = ((lean_object*)(lp_aes__lean_expandKey___closed__2));
-v___x_247_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg(v___x_246_, v___x_245_, v___x_243_);
-v___x_248_ = ((lean_object*)(lp_aes__lean_expandKey___closed__3));
-v___x_249_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg(v___x_247_, v___x_248_, v_words_242_, v___x_241_);
-lean_dec_ref(v___x_247_);
-return v___x_249_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean_expandKey___boxed(lean_object* v_key_250_){
-_start:
-{
-lean_object* v_res_251_; 
-v_res_251_ = lp_aes__lean_expandKey(v_key_250_);
-lean_dec_ref(v_key_250_);
-return v_res_251_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0(lean_object* v_key_252_, lean_object* v_range_253_, lean_object* v_b_254_, lean_object* v_i_255_, lean_object* v_hs_256_, lean_object* v_hl_257_){
-_start:
-{
-lean_object* v___x_258_; 
-v___x_258_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___redArg(v_key_252_, v_range_253_, v_b_254_, v_i_255_);
-return v___x_258_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0___boxed(lean_object* v_key_259_, lean_object* v_range_260_, lean_object* v_b_261_, lean_object* v_i_262_, lean_object* v_hs_263_, lean_object* v_hl_264_){
-_start:
-{
-lean_object* v_res_265_; 
-v_res_265_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__0(v_key_259_, v_range_260_, v_b_261_, v_i_262_, v_hs_263_, v_hl_264_);
-lean_dec_ref(v_range_260_);
-lean_dec_ref(v_key_259_);
-return v_res_265_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1(lean_object* v_range_266_, lean_object* v_b_267_, lean_object* v_i_268_, lean_object* v_hs_269_, lean_object* v_hl_270_){
-_start:
-{
-lean_object* v___x_271_; 
-v___x_271_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___redArg(v_range_266_, v_b_267_, v_i_268_);
-return v___x_271_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1___boxed(lean_object* v_range_272_, lean_object* v_b_273_, lean_object* v_i_274_, lean_object* v_hs_275_, lean_object* v_hl_276_){
-_start:
-{
-lean_object* v_res_277_; 
-v_res_277_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__1(v_range_272_, v_b_273_, v_i_274_, v_hs_275_, v_hl_276_);
-lean_dec_ref(v_range_272_);
-return v_res_277_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2(lean_object* v___x_278_, lean_object* v_range_279_, lean_object* v_b_280_, lean_object* v_i_281_, lean_object* v_hs_282_, lean_object* v_hl_283_){
-_start:
-{
-lean_object* v___x_284_; 
-v___x_284_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___redArg(v___x_278_, v_range_279_, v_b_280_, v_i_281_);
-return v___x_284_;
-}
-}
-LEAN_EXPORT lean_object* lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2___boxed(lean_object* v___x_285_, lean_object* v_range_286_, lean_object* v_b_287_, lean_object* v_i_288_, lean_object* v_hs_289_, lean_object* v_hl_290_){
-_start:
-{
-lean_object* v_res_291_; 
-v_res_291_ = lp_aes__lean___private_Init_Data_Range_Basic_0__Std_Legacy_Range_forIn_x27_loop___at___00expandKey_spec__2(v___x_285_, v_range_286_, v_b_287_, v_i_288_, v_hs_289_, v_hl_290_);
-lean_dec_ref(v_range_286_);
-lean_dec_ref(v___x_285_);
-return v_res_291_;
+lean_object* v___f_208_; lean_object* v___x_209_; lean_object* v___x_210_; lean_object* v_initWords_211_; lean_object* v___x_212_; lean_object* v_words_213_; lean_object* v___f_214_; lean_object* v___x_215_; lean_object* v___x_216_; 
+v___f_208_ = lean_alloc_closure((void*)(lp_aes__lean_expandKey___lam__0___boxed), 2, 1);
+lean_closure_set(v___f_208_, 0, v_key_207_);
+v___x_209_ = lean_obj_once(&lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0, &lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0_once, _init_lp_aes__lean_List_foldl___at___00expandKey_spec__0___closed__0);
+v___x_210_ = lean_unsigned_to_nat(4u);
+v_initWords_211_ = l_Array_ofFn___redArg(v___x_210_, v___f_208_);
+v___x_212_ = lean_obj_once(&lp_aes__lean_expandKey___closed__0, &lp_aes__lean_expandKey___closed__0_once, _init_lp_aes__lean_expandKey___closed__0);
+v_words_213_ = lp_aes__lean_List_foldl___at___00expandKey_spec__0(v_initWords_211_, v___x_212_);
+v___f_214_ = lean_alloc_closure((void*)(lp_aes__lean_expandKey___lam__1___boxed), 4, 3);
+lean_closure_set(v___f_214_, 0, v___x_210_);
+lean_closure_set(v___f_214_, 1, v___x_209_);
+lean_closure_set(v___f_214_, 2, v_words_213_);
+v___x_215_ = lean_unsigned_to_nat(11u);
+v___x_216_ = l_Array_ofFn___redArg(v___x_215_, v___f_214_);
+return v___x_216_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
