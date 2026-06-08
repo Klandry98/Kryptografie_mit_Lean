@@ -1,0 +1,53 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["147349ac129fcfa7.olean"],
+  "m": false,
+  "i": "a7b73041171e1eeb.ilean",
+  "c": "196bc0252246b83f.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/landry/aes_lean/.lake/build/lib/lean /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/landry/aes_lean/AES/TransformsTest.lean -o /home/landry/aes_lean/.lake/build/lib/lean/AES/TransformsTest.olean -i /home/landry/aes_lean/.lake/build/lib/lean/AES/TransformsTest.ilean -c /home/landry/aes_lean/.lake/build/ir/AES/TransformsTest.c --setup /home/landry/aes_lean/.lake/build/ir/AES/TransformsTest.setup.json --json",
+   "level": "trace"},
+  {"message": "AES/TransformsTest.lean:42:0: #[2, 3, 4, 1]", "level": "info"},
+  {"message": "AES/TransformsTest.lean:43:0: #[4, 1, 2, 3]", "level": "info"},
+  {"message": "AES/TransformsTest.lean:44:0: #[1, 2, 3, 4]", "level": "info"},
+  {"message": "AES/TransformsTest.lean:75:0: #[0, 4, 8, 12]", "level": "info"},
+  {"message": "AES/TransformsTest.lean:76:0: #[1, 5, 9, 13]", "level": "info"},
+  {"message":
+   "AES/TransformsTest.lean:94:0: #[#[0, 5, 10, 15], #[4, 9, 14, 3], #[8, 13, 2, 7], #[12, 1, 6, 11]]",
+   "level": "info"},
+  {"message":
+   "AES/TransformsTest.lean:95:0: #[#[0, 13, 10, 7], #[4, 1, 14, 11], #[8, 5, 2, 15], #[12, 9, 6, 3]]",
+   "level": "info"},
+  {"message":
+   "AES/TransformsTest.lean:224:0: #[#[43, 127, 23, 21], #[44, 171, 212, 161], #[163, 254, 31, 131], #[5, 194, 65, 51]]",
+   "level": "info"},
+  {"message":
+   "AES/TransformsTest.lean:260:0: #[#[43, 171, 31, 51], #[44, 254, 65, 21], #[163, 194, 23, 161], #[5, 127, 212, 131]]",
+   "level": "info"},
+  {"message":
+   "AES/TransformsTest.lean:261:0: #[#[43, 123, 31, 25], #[44, 167, 220, 165], #[163, 250, 23, 143], #[5, 206, 73, 55]]",
+   "level": "info"}],
+ "inputs":
+ [["AES.TransformsTest:deps",
+   [["deps",
+     [["aes_lean/AESTests:extraDep",
+       [["@aes_lean:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["AES.Transforms transitive imports (legacy)", "1b7edef1aab8f302"],
+        ["AES.Transforms:importAllArts", "e563c0d489732896"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["/home/landry/aes_lean/AES/TransformsTest.lean", "a8a57fc8526856ee"],
+  ["options", [["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: AES.TransformsTest", "8c0bd02b4123c83f"],
+  ["Package.id?: (some aes_lean)", "ce6142766c141aac"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "01ede6403790a9ac"}

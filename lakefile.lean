@@ -10,3 +10,9 @@ lean_lib AES where
 
 lean_exe aes_main where
   root := `Main
+
+lean_lib AESTests where
+  roots := #[`AES.TransformsTest]
+
+lean_lib AESProofs where
+  roots := #[`AES.TransformationsProofs]

@@ -3918,7 +3918,7 @@ if (lean_obj_tag(v___x_3454_) == 0)
 {
 lean_object* v___x_3455_; lean_object* v___x_3456_; 
 lean_dec_ref(v___x_3454_);
-v___x_3455_ = lean_unsigned_to_nat(1000000u);
+v___x_3455_ = lean_cstr_to_nat("1000000000000000000");
 v___x_3456_ = lp_aes__lean_benchmarkEncrypt(v___x_3455_);
 return v___x_3456_;
 }

@@ -3,12 +3,12 @@
   Grundlegende Datentypen für AES-128
 -/
 
-abbrev Byte := UInt8
-abbrev Word := Array Byte
-abbrev Block := Array Byte
-abbrev State := Array (Array Byte)
-abbrev RoundKey := Block
-abbrev KeySchedule := Array RoundKey
+abbrev Byte := UInt8      -- 8-Bit unsigned integer, repräsentiert ein Byte
+abbrev Word := Array Byte  -- 4 Bytes, repräsentiert ein Wort (32 Bit)
+abbrev Block := Array Byte  -- 16 Bytes, repräsentiert einen Block
+abbrev State := Array (Array Byte)  -- 4x4 Matrix, repräsentiert den Zustand
+abbrev RoundKey := Block      -- 16 Bytes, repräsentiert einen Rundenschlüssel
+abbrev KeySchedule := Array RoundKey  -- Liste von Rundenschlüsseln
 
 /-- Block (16 Bytes linear) -> State (4x4 spaltenweise) -/
 def blockToState (b : Block) : State :=

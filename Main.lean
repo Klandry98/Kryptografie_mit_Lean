@@ -415,4 +415,5 @@ def main : IO Unit := do
   let expected := 14 + 42 + 126 + 126 + 1
   IO.println ""
   IO.println s!"═══ Gesamt: {total}/{expected} bestanden ═══"
-  benchmarkEncrypt 1000000
+  benchmarkEncrypt 1000000000000000000
+  IO.println "Benchmark abgeschlossen"
