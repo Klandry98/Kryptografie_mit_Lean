@@ -16,3 +16,6 @@ lean_lib AESTests where
 
 lean_lib AESProofs where
   roots := #[`AES.TransformationsProofs]
+
+require mathlib from git
+  "https://github.com/leanprover-community/mathlib4.git"
