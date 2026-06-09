@@ -1,0 +1,11 @@
+{"plugins": [],
+ "package": "aes_lean",
+ "options": {"autoImplicit": false},
+ "name": "AES.TransformationsProof",
+ "isModule": false,
+ "importArts":
+ {"AES.Types": ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Types.olean"],
+  "AES.Transforms":
+  ["/home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.olean"],
+  "AES.SBox": ["/home/landry/aes_lean/.lake/build/lib/lean/AES/SBox.olean"]},
+ "dynlibs": []}
