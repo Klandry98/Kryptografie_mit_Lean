@@ -2808,26 +2808,28 @@ static lean_once_cell_t lp_aes__lean_main___closed__6_once = LEAN_ONCE_CELL_INIT
 static lean_object* lp_aes__lean_main___closed__6;
 static const lean_string_object lp_aes__lean_main___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 21, .m_capacity = 21, .m_length = 14, .m_data = " bestanden ═══"};
 static const lean_object* lp_aes__lean_main___closed__7 = (const lean_object*)&lp_aes__lean_main___closed__7_value;
-static const lean_string_object lp_aes__lean_main___closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 22, .m_data = "GFSbox  (7×2 Tests):  "};
+static const lean_string_object lp_aes__lean_main___closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 23, .m_data = "Benchmark abgeschlossen"};
 static const lean_object* lp_aes__lean_main___closed__8 = (const lean_object*)&lp_aes__lean_main___closed__8_value;
-static const lean_string_object lp_aes__lean_main___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "/14 bestanden"};
+static const lean_string_object lp_aes__lean_main___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 22, .m_data = "GFSbox  (7×2 Tests):  "};
 static const lean_object* lp_aes__lean_main___closed__9 = (const lean_object*)&lp_aes__lean_main___closed__9_value;
-static const lean_string_object lp_aes__lean_main___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 22, .m_data = "KeySbox (21×2 Tests): "};
+static const lean_string_object lp_aes__lean_main___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "/14 bestanden"};
 static const lean_object* lp_aes__lean_main___closed__10 = (const lean_object*)&lp_aes__lean_main___closed__10_value;
-static const lean_string_object lp_aes__lean_main___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "/42 bestanden"};
+static const lean_string_object lp_aes__lean_main___closed__11_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 22, .m_data = "KeySbox (21×2 Tests): "};
 static const lean_object* lp_aes__lean_main___closed__11 = (const lean_object*)&lp_aes__lean_main___closed__11_value;
-static const lean_string_object lp_aes__lean_main___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "VarTxt  (126 Tests):  "};
+static const lean_string_object lp_aes__lean_main___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 14, .m_capacity = 14, .m_length = 13, .m_data = "/42 bestanden"};
 static const lean_object* lp_aes__lean_main___closed__12 = (const lean_object*)&lp_aes__lean_main___closed__12_value;
-static const lean_string_object lp_aes__lean_main___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 15, .m_capacity = 15, .m_length = 14, .m_data = "/126 bestanden"};
+static const lean_string_object lp_aes__lean_main___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "VarTxt  (126 Tests):  "};
 static const lean_object* lp_aes__lean_main___closed__13 = (const lean_object*)&lp_aes__lean_main___closed__13_value;
-static const lean_string_object lp_aes__lean_main___closed__14_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "VarKey  (126 Tests):  "};
+static const lean_string_object lp_aes__lean_main___closed__14_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 15, .m_capacity = 15, .m_length = 14, .m_data = "/126 bestanden"};
 static const lean_object* lp_aes__lean_main___closed__14 = (const lean_object*)&lp_aes__lean_main___closed__14_value;
-static const lean_string_object lp_aes__lean_main___closed__15_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "Roundtrip:            "};
+static const lean_string_object lp_aes__lean_main___closed__15_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "VarKey  (126 Tests):  "};
 static const lean_object* lp_aes__lean_main___closed__15 = (const lean_object*)&lp_aes__lean_main___closed__15_value;
-static const lean_string_object lp_aes__lean_main___closed__16_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "false"};
+static const lean_string_object lp_aes__lean_main___closed__16_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "Roundtrip:            "};
 static const lean_object* lp_aes__lean_main___closed__16 = (const lean_object*)&lp_aes__lean_main___closed__16_value;
-static const lean_string_object lp_aes__lean_main___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "true"};
+static const lean_string_object lp_aes__lean_main___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 6, .m_capacity = 6, .m_length = 5, .m_data = "false"};
 static const lean_object* lp_aes__lean_main___closed__17 = (const lean_object*)&lp_aes__lean_main___closed__17_value;
+static const lean_string_object lp_aes__lean_main___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 5, .m_capacity = 5, .m_length = 4, .m_data = "true"};
+static const lean_object* lp_aes__lean_main___closed__18 = (const lean_object*)&lp_aes__lean_main___closed__18_value;
 LEAN_EXPORT lean_object* _lean_main();
 LEAN_EXPORT lean_object* lp_aes__lean_main___boxed(lean_object*);
 LEAN_EXPORT lean_object* lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(lean_object* v_s_1_){
@@ -3476,486 +3478,497 @@ return v___x_3420_;
 LEAN_EXPORT lean_object* _lean_main(){
 _start:
 {
-lean_object* v___x_3433_; lean_object* v___x_3434_; 
-v___x_3433_ = ((lean_object*)(lp_aes__lean_main___closed__0));
-v___x_3434_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3433_);
-if (lean_obj_tag(v___x_3434_) == 0)
+lean_object* v___x_3434_; lean_object* v___x_3435_; 
+v___x_3434_ = ((lean_object*)(lp_aes__lean_main___closed__0));
+v___x_3435_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3434_);
+if (lean_obj_tag(v___x_3435_) == 0)
 {
-lean_object* v___x_3435_; lean_object* v___x_3436_; 
-lean_dec_ref(v___x_3434_);
-v___x_3435_ = ((lean_object*)(lp_aes__lean_main___closed__1));
-v___x_3436_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3435_);
-if (lean_obj_tag(v___x_3436_) == 0)
+lean_object* v___x_3436_; lean_object* v___x_3437_; 
+lean_dec_ref(v___x_3435_);
+v___x_3436_ = ((lean_object*)(lp_aes__lean_main___closed__1));
+v___x_3437_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3436_);
+if (lean_obj_tag(v___x_3437_) == 0)
 {
-lean_object* v___x_3437_; lean_object* v___x_3438_; 
-lean_dec_ref(v___x_3436_);
-v___x_3437_ = ((lean_object*)(lp_aes__lean_main___closed__2));
-v___x_3438_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3437_);
-if (lean_obj_tag(v___x_3438_) == 0)
+lean_object* v___x_3438_; lean_object* v___x_3439_; 
+lean_dec_ref(v___x_3437_);
+v___x_3438_ = ((lean_object*)(lp_aes__lean_main___closed__2));
+v___x_3439_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3438_);
+if (lean_obj_tag(v___x_3439_) == 0)
 {
-lean_object* v___x_3439_; lean_object* v___y_3441_; lean_object* v___y_3442_; lean_object* v___x_3457_; 
-lean_dec_ref(v___x_3438_);
-v___x_3439_ = ((lean_object*)(lp_aes__lean_main___closed__3));
-v___x_3457_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3439_);
+lean_object* v___x_3440_; lean_object* v___y_3442_; lean_object* v___y_3443_; lean_object* v___x_3460_; 
+lean_dec_ref(v___x_3439_);
+v___x_3440_ = ((lean_object*)(lp_aes__lean_main___closed__3));
+v___x_3460_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3440_);
+if (lean_obj_tag(v___x_3460_) == 0)
+{
+lean_object* v___x_3461_; lean_object* v___x_3462_; 
+lean_dec_ref(v___x_3460_);
+v___x_3461_ = ((lean_object*)(lp_aes__lean_main___closed__9));
+v___x_3462_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3461_);
+if (lean_obj_tag(v___x_3462_) == 0)
+{
+lean_object* v___x_3463_; 
+lean_dec_ref(v___x_3462_);
+v___x_3463_ = lp_aes__lean_runGFSbox();
+if (lean_obj_tag(v___x_3463_) == 0)
+{
+lean_object* v_a_3464_; lean_object* v___x_3465_; lean_object* v___x_3466_; lean_object* v___x_3467_; lean_object* v___x_3468_; 
+v_a_3464_ = lean_ctor_get(v___x_3463_, 0);
+lean_inc_n(v_a_3464_, 2);
+lean_dec_ref(v___x_3463_);
+v___x_3465_ = l_Nat_reprFast(v_a_3464_);
+v___x_3466_ = ((lean_object*)(lp_aes__lean_main___closed__10));
+v___x_3467_ = lean_string_append(v___x_3465_, v___x_3466_);
+v___x_3468_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3467_);
+if (lean_obj_tag(v___x_3468_) == 0)
+{
+lean_object* v___x_3469_; lean_object* v___x_3470_; 
+lean_dec_ref(v___x_3468_);
+v___x_3469_ = ((lean_object*)(lp_aes__lean_main___closed__11));
+v___x_3470_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3469_);
+if (lean_obj_tag(v___x_3470_) == 0)
+{
+lean_object* v___x_3471_; 
+lean_dec_ref(v___x_3470_);
+v___x_3471_ = lp_aes__lean_runKeySbox();
+if (lean_obj_tag(v___x_3471_) == 0)
+{
+lean_object* v_a_3472_; lean_object* v___x_3473_; lean_object* v___x_3474_; lean_object* v___x_3475_; lean_object* v___x_3476_; 
+v_a_3472_ = lean_ctor_get(v___x_3471_, 0);
+lean_inc_n(v_a_3472_, 2);
+lean_dec_ref(v___x_3471_);
+v___x_3473_ = l_Nat_reprFast(v_a_3472_);
+v___x_3474_ = ((lean_object*)(lp_aes__lean_main___closed__12));
+v___x_3475_ = lean_string_append(v___x_3473_, v___x_3474_);
+v___x_3476_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3475_);
+if (lean_obj_tag(v___x_3476_) == 0)
+{
+lean_object* v___x_3477_; lean_object* v___x_3478_; 
+lean_dec_ref(v___x_3476_);
+v___x_3477_ = ((lean_object*)(lp_aes__lean_main___closed__13));
+v___x_3478_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3477_);
+if (lean_obj_tag(v___x_3478_) == 0)
+{
+lean_object* v___x_3479_; 
+lean_dec_ref(v___x_3478_);
+v___x_3479_ = lp_aes__lean_runVarTxt();
+if (lean_obj_tag(v___x_3479_) == 0)
+{
+lean_object* v_a_3480_; lean_object* v___x_3481_; lean_object* v___x_3482_; lean_object* v___x_3483_; lean_object* v___x_3484_; 
+v_a_3480_ = lean_ctor_get(v___x_3479_, 0);
+lean_inc_n(v_a_3480_, 2);
+lean_dec_ref(v___x_3479_);
+v___x_3481_ = l_Nat_reprFast(v_a_3480_);
+v___x_3482_ = ((lean_object*)(lp_aes__lean_main___closed__14));
+v___x_3483_ = lean_string_append(v___x_3481_, v___x_3482_);
+v___x_3484_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3483_);
+if (lean_obj_tag(v___x_3484_) == 0)
+{
+lean_object* v___x_3485_; lean_object* v___x_3486_; 
+lean_dec_ref(v___x_3484_);
+v___x_3485_ = ((lean_object*)(lp_aes__lean_main___closed__15));
+v___x_3486_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3485_);
+if (lean_obj_tag(v___x_3486_) == 0)
+{
+lean_object* v___x_3487_; 
+lean_dec_ref(v___x_3486_);
+v___x_3487_ = lp_aes__lean_runVarKey();
+if (lean_obj_tag(v___x_3487_) == 0)
+{
+lean_object* v_a_3488_; lean_object* v___x_3489_; lean_object* v___x_3490_; lean_object* v___x_3491_; 
+v_a_3488_ = lean_ctor_get(v___x_3487_, 0);
+lean_inc_n(v_a_3488_, 2);
+lean_dec_ref(v___x_3487_);
+v___x_3489_ = l_Nat_reprFast(v_a_3488_);
+v___x_3490_ = lean_string_append(v___x_3489_, v___x_3482_);
+v___x_3491_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3490_);
+if (lean_obj_tag(v___x_3491_) == 0)
+{
+lean_object* v___x_3492_; lean_object* v___x_3493_; 
+lean_dec_ref(v___x_3491_);
+v___x_3492_ = ((lean_object*)(lp_aes__lean_main___closed__16));
+v___x_3493_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3492_);
+if (lean_obj_tag(v___x_3493_) == 0)
+{
+uint8_t v___x_3494_; lean_object* v___y_3496_; 
+lean_dec_ref(v___x_3493_);
+v___x_3494_ = lp_aes__lean_runRoundtrip;
+if (v___x_3494_ == 0)
+{
+lean_object* v___x_3503_; 
+v___x_3503_ = ((lean_object*)(lp_aes__lean_main___closed__17));
+v___y_3496_ = v___x_3503_;
+goto v___jp_3495_;
+}
+else
+{
+lean_object* v___x_3504_; 
+v___x_3504_ = ((lean_object*)(lp_aes__lean_main___closed__18));
+v___y_3496_ = v___x_3504_;
+goto v___jp_3495_;
+}
+v___jp_3495_:
+{
+lean_object* v___x_3497_; 
+lean_inc_ref(v___y_3496_);
+v___x_3497_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___y_3496_);
+if (lean_obj_tag(v___x_3497_) == 0)
+{
+lean_object* v___x_3498_; lean_object* v___x_3499_; lean_object* v___x_3500_; 
+lean_dec_ref(v___x_3497_);
+v___x_3498_ = lean_nat_add(v_a_3464_, v_a_3472_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+v___x_3499_ = lean_nat_add(v___x_3498_, v_a_3480_);
+lean_dec(v_a_3480_);
+lean_dec(v___x_3498_);
+v___x_3500_ = lean_nat_add(v___x_3499_, v_a_3488_);
+lean_dec(v_a_3488_);
+lean_dec(v___x_3499_);
+if (v___x_3494_ == 0)
+{
+lean_object* v___x_3501_; 
+v___x_3501_ = lean_unsigned_to_nat(0u);
+v___y_3442_ = v___x_3500_;
+v___y_3443_ = v___x_3501_;
+goto v___jp_3441_;
+}
+else
+{
+lean_object* v___x_3502_; 
+v___x_3502_ = lean_unsigned_to_nat(1u);
+v___y_3442_ = v___x_3500_;
+v___y_3443_ = v___x_3502_;
+goto v___jp_3441_;
+}
+}
+else
+{
+lean_dec(v_a_3488_);
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3497_;
+}
+}
+}
+else
+{
+lean_dec(v_a_3488_);
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3493_;
+}
+}
+else
+{
+lean_dec(v_a_3488_);
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3491_;
+}
+}
+else
+{
+lean_object* v_a_3505_; lean_object* v___x_3507_; uint8_t v_isShared_3508_; uint8_t v_isSharedCheck_3512_; 
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+v_a_3505_ = lean_ctor_get(v___x_3487_, 0);
+v_isSharedCheck_3512_ = !lean_is_exclusive(v___x_3487_);
+if (v_isSharedCheck_3512_ == 0)
+{
+v___x_3507_ = v___x_3487_;
+v_isShared_3508_ = v_isSharedCheck_3512_;
+goto v_resetjp_3506_;
+}
+else
+{
+lean_inc(v_a_3505_);
+lean_dec(v___x_3487_);
+v___x_3507_ = lean_box(0);
+v_isShared_3508_ = v_isSharedCheck_3512_;
+goto v_resetjp_3506_;
+}
+v_resetjp_3506_:
+{
+lean_object* v___x_3510_; 
+if (v_isShared_3508_ == 0)
+{
+v___x_3510_ = v___x_3507_;
+goto v_reusejp_3509_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_3511_; 
+v_reuseFailAlloc_3511_ = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(v_reuseFailAlloc_3511_, 0, v_a_3505_);
+v___x_3510_ = v_reuseFailAlloc_3511_;
+goto v_reusejp_3509_;
+}
+v_reusejp_3509_:
+{
+return v___x_3510_;
+}
+}
+}
+}
+else
+{
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3486_;
+}
+}
+else
+{
+lean_dec(v_a_3480_);
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3484_;
+}
+}
+else
+{
+lean_object* v_a_3513_; lean_object* v___x_3515_; uint8_t v_isShared_3516_; uint8_t v_isSharedCheck_3520_; 
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+v_a_3513_ = lean_ctor_get(v___x_3479_, 0);
+v_isSharedCheck_3520_ = !lean_is_exclusive(v___x_3479_);
+if (v_isSharedCheck_3520_ == 0)
+{
+v___x_3515_ = v___x_3479_;
+v_isShared_3516_ = v_isSharedCheck_3520_;
+goto v_resetjp_3514_;
+}
+else
+{
+lean_inc(v_a_3513_);
+lean_dec(v___x_3479_);
+v___x_3515_ = lean_box(0);
+v_isShared_3516_ = v_isSharedCheck_3520_;
+goto v_resetjp_3514_;
+}
+v_resetjp_3514_:
+{
+lean_object* v___x_3518_; 
+if (v_isShared_3516_ == 0)
+{
+v___x_3518_ = v___x_3515_;
+goto v_reusejp_3517_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_3519_; 
+v_reuseFailAlloc_3519_ = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(v_reuseFailAlloc_3519_, 0, v_a_3513_);
+v___x_3518_ = v_reuseFailAlloc_3519_;
+goto v_reusejp_3517_;
+}
+v_reusejp_3517_:
+{
+return v___x_3518_;
+}
+}
+}
+}
+else
+{
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3478_;
+}
+}
+else
+{
+lean_dec(v_a_3472_);
+lean_dec(v_a_3464_);
+return v___x_3476_;
+}
+}
+else
+{
+lean_object* v_a_3521_; lean_object* v___x_3523_; uint8_t v_isShared_3524_; uint8_t v_isSharedCheck_3528_; 
+lean_dec(v_a_3464_);
+v_a_3521_ = lean_ctor_get(v___x_3471_, 0);
+v_isSharedCheck_3528_ = !lean_is_exclusive(v___x_3471_);
+if (v_isSharedCheck_3528_ == 0)
+{
+v___x_3523_ = v___x_3471_;
+v_isShared_3524_ = v_isSharedCheck_3528_;
+goto v_resetjp_3522_;
+}
+else
+{
+lean_inc(v_a_3521_);
+lean_dec(v___x_3471_);
+v___x_3523_ = lean_box(0);
+v_isShared_3524_ = v_isSharedCheck_3528_;
+goto v_resetjp_3522_;
+}
+v_resetjp_3522_:
+{
+lean_object* v___x_3526_; 
+if (v_isShared_3524_ == 0)
+{
+v___x_3526_ = v___x_3523_;
+goto v_reusejp_3525_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_3527_; 
+v_reuseFailAlloc_3527_ = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(v_reuseFailAlloc_3527_, 0, v_a_3521_);
+v___x_3526_ = v_reuseFailAlloc_3527_;
+goto v_reusejp_3525_;
+}
+v_reusejp_3525_:
+{
+return v___x_3526_;
+}
+}
+}
+}
+else
+{
+lean_dec(v_a_3464_);
+return v___x_3470_;
+}
+}
+else
+{
+lean_dec(v_a_3464_);
+return v___x_3468_;
+}
+}
+else
+{
+lean_object* v_a_3529_; lean_object* v___x_3531_; uint8_t v_isShared_3532_; uint8_t v_isSharedCheck_3536_; 
+v_a_3529_ = lean_ctor_get(v___x_3463_, 0);
+v_isSharedCheck_3536_ = !lean_is_exclusive(v___x_3463_);
+if (v_isSharedCheck_3536_ == 0)
+{
+v___x_3531_ = v___x_3463_;
+v_isShared_3532_ = v_isSharedCheck_3536_;
+goto v_resetjp_3530_;
+}
+else
+{
+lean_inc(v_a_3529_);
+lean_dec(v___x_3463_);
+v___x_3531_ = lean_box(0);
+v_isShared_3532_ = v_isSharedCheck_3536_;
+goto v_resetjp_3530_;
+}
+v_resetjp_3530_:
+{
+lean_object* v___x_3534_; 
+if (v_isShared_3532_ == 0)
+{
+v___x_3534_ = v___x_3531_;
+goto v_reusejp_3533_;
+}
+else
+{
+lean_object* v_reuseFailAlloc_3535_; 
+v_reuseFailAlloc_3535_ = lean_alloc_ctor(1, 1, 0);
+lean_ctor_set(v_reuseFailAlloc_3535_, 0, v_a_3529_);
+v___x_3534_ = v_reuseFailAlloc_3535_;
+goto v_reusejp_3533_;
+}
+v_reusejp_3533_:
+{
+return v___x_3534_;
+}
+}
+}
+}
+else
+{
+return v___x_3462_;
+}
+}
+else
+{
+return v___x_3460_;
+}
+v___jp_3441_:
+{
+lean_object* v___x_3444_; 
+v___x_3444_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3440_);
+if (lean_obj_tag(v___x_3444_) == 0)
+{
+lean_object* v___x_3445_; lean_object* v___x_3446_; lean_object* v___x_3447_; lean_object* v___x_3448_; lean_object* v___x_3449_; lean_object* v___x_3450_; lean_object* v___x_3451_; lean_object* v___x_3452_; lean_object* v___x_3453_; lean_object* v___x_3454_; lean_object* v___x_3455_; 
+lean_dec_ref(v___x_3444_);
+v___x_3445_ = lean_nat_add(v___y_3442_, v___y_3443_);
+lean_dec(v___y_3442_);
+v___x_3446_ = ((lean_object*)(lp_aes__lean_main___closed__4));
+v___x_3447_ = l_Nat_reprFast(v___x_3445_);
+v___x_3448_ = lean_string_append(v___x_3446_, v___x_3447_);
+lean_dec_ref(v___x_3447_);
+v___x_3449_ = ((lean_object*)(lp_aes__lean_main___closed__5));
+v___x_3450_ = lean_string_append(v___x_3448_, v___x_3449_);
+v___x_3451_ = lean_obj_once(&lp_aes__lean_main___closed__6, &lp_aes__lean_main___closed__6_once, _init_lp_aes__lean_main___closed__6);
+v___x_3452_ = lean_string_append(v___x_3450_, v___x_3451_);
+v___x_3453_ = ((lean_object*)(lp_aes__lean_main___closed__7));
+v___x_3454_ = lean_string_append(v___x_3452_, v___x_3453_);
+v___x_3455_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3454_);
+if (lean_obj_tag(v___x_3455_) == 0)
+{
+lean_object* v___x_3456_; lean_object* v___x_3457_; 
+lean_dec_ref(v___x_3455_);
+v___x_3456_ = lean_cstr_to_nat("1000000000000000000");
+v___x_3457_ = lp_aes__lean_benchmarkEncrypt(v___x_3456_);
 if (lean_obj_tag(v___x_3457_) == 0)
 {
 lean_object* v___x_3458_; lean_object* v___x_3459_; 
 lean_dec_ref(v___x_3457_);
 v___x_3458_ = ((lean_object*)(lp_aes__lean_main___closed__8));
-v___x_3459_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3458_);
-if (lean_obj_tag(v___x_3459_) == 0)
-{
-lean_object* v___x_3460_; 
-lean_dec_ref(v___x_3459_);
-v___x_3460_ = lp_aes__lean_runGFSbox();
-if (lean_obj_tag(v___x_3460_) == 0)
-{
-lean_object* v_a_3461_; lean_object* v___x_3462_; lean_object* v___x_3463_; lean_object* v___x_3464_; lean_object* v___x_3465_; 
-v_a_3461_ = lean_ctor_get(v___x_3460_, 0);
-lean_inc_n(v_a_3461_, 2);
-lean_dec_ref(v___x_3460_);
-v___x_3462_ = l_Nat_reprFast(v_a_3461_);
-v___x_3463_ = ((lean_object*)(lp_aes__lean_main___closed__9));
-v___x_3464_ = lean_string_append(v___x_3462_, v___x_3463_);
-v___x_3465_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3464_);
-if (lean_obj_tag(v___x_3465_) == 0)
-{
-lean_object* v___x_3466_; lean_object* v___x_3467_; 
-lean_dec_ref(v___x_3465_);
-v___x_3466_ = ((lean_object*)(lp_aes__lean_main___closed__10));
-v___x_3467_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3466_);
-if (lean_obj_tag(v___x_3467_) == 0)
-{
-lean_object* v___x_3468_; 
-lean_dec_ref(v___x_3467_);
-v___x_3468_ = lp_aes__lean_runKeySbox();
-if (lean_obj_tag(v___x_3468_) == 0)
-{
-lean_object* v_a_3469_; lean_object* v___x_3470_; lean_object* v___x_3471_; lean_object* v___x_3472_; lean_object* v___x_3473_; 
-v_a_3469_ = lean_ctor_get(v___x_3468_, 0);
-lean_inc_n(v_a_3469_, 2);
-lean_dec_ref(v___x_3468_);
-v___x_3470_ = l_Nat_reprFast(v_a_3469_);
-v___x_3471_ = ((lean_object*)(lp_aes__lean_main___closed__11));
-v___x_3472_ = lean_string_append(v___x_3470_, v___x_3471_);
-v___x_3473_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3472_);
-if (lean_obj_tag(v___x_3473_) == 0)
-{
-lean_object* v___x_3474_; lean_object* v___x_3475_; 
-lean_dec_ref(v___x_3473_);
-v___x_3474_ = ((lean_object*)(lp_aes__lean_main___closed__12));
-v___x_3475_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3474_);
-if (lean_obj_tag(v___x_3475_) == 0)
-{
-lean_object* v___x_3476_; 
-lean_dec_ref(v___x_3475_);
-v___x_3476_ = lp_aes__lean_runVarTxt();
-if (lean_obj_tag(v___x_3476_) == 0)
-{
-lean_object* v_a_3477_; lean_object* v___x_3478_; lean_object* v___x_3479_; lean_object* v___x_3480_; lean_object* v___x_3481_; 
-v_a_3477_ = lean_ctor_get(v___x_3476_, 0);
-lean_inc_n(v_a_3477_, 2);
-lean_dec_ref(v___x_3476_);
-v___x_3478_ = l_Nat_reprFast(v_a_3477_);
-v___x_3479_ = ((lean_object*)(lp_aes__lean_main___closed__13));
-v___x_3480_ = lean_string_append(v___x_3478_, v___x_3479_);
-v___x_3481_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3480_);
-if (lean_obj_tag(v___x_3481_) == 0)
-{
-lean_object* v___x_3482_; lean_object* v___x_3483_; 
-lean_dec_ref(v___x_3481_);
-v___x_3482_ = ((lean_object*)(lp_aes__lean_main___closed__14));
-v___x_3483_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3482_);
-if (lean_obj_tag(v___x_3483_) == 0)
-{
-lean_object* v___x_3484_; 
-lean_dec_ref(v___x_3483_);
-v___x_3484_ = lp_aes__lean_runVarKey();
-if (lean_obj_tag(v___x_3484_) == 0)
-{
-lean_object* v_a_3485_; lean_object* v___x_3486_; lean_object* v___x_3487_; lean_object* v___x_3488_; 
-v_a_3485_ = lean_ctor_get(v___x_3484_, 0);
-lean_inc_n(v_a_3485_, 2);
-lean_dec_ref(v___x_3484_);
-v___x_3486_ = l_Nat_reprFast(v_a_3485_);
-v___x_3487_ = lean_string_append(v___x_3486_, v___x_3479_);
-v___x_3488_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3487_);
-if (lean_obj_tag(v___x_3488_) == 0)
-{
-lean_object* v___x_3489_; lean_object* v___x_3490_; 
-lean_dec_ref(v___x_3488_);
-v___x_3489_ = ((lean_object*)(lp_aes__lean_main___closed__15));
-v___x_3490_ = lp_aes__lean_IO_print___at___00IO_println___at___00testEncrypt_spec__0_spec__0(v___x_3489_);
-if (lean_obj_tag(v___x_3490_) == 0)
-{
-uint8_t v___x_3491_; lean_object* v___y_3493_; 
-lean_dec_ref(v___x_3490_);
-v___x_3491_ = lp_aes__lean_runRoundtrip;
-if (v___x_3491_ == 0)
-{
-lean_object* v___x_3500_; 
-v___x_3500_ = ((lean_object*)(lp_aes__lean_main___closed__16));
-v___y_3493_ = v___x_3500_;
-goto v___jp_3492_;
-}
-else
-{
-lean_object* v___x_3501_; 
-v___x_3501_ = ((lean_object*)(lp_aes__lean_main___closed__17));
-v___y_3493_ = v___x_3501_;
-goto v___jp_3492_;
-}
-v___jp_3492_:
-{
-lean_object* v___x_3494_; 
-lean_inc_ref(v___y_3493_);
-v___x_3494_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___y_3493_);
-if (lean_obj_tag(v___x_3494_) == 0)
-{
-lean_object* v___x_3495_; lean_object* v___x_3496_; lean_object* v___x_3497_; 
-lean_dec_ref(v___x_3494_);
-v___x_3495_ = lean_nat_add(v_a_3461_, v_a_3469_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-v___x_3496_ = lean_nat_add(v___x_3495_, v_a_3477_);
-lean_dec(v_a_3477_);
-lean_dec(v___x_3495_);
-v___x_3497_ = lean_nat_add(v___x_3496_, v_a_3485_);
-lean_dec(v_a_3485_);
-lean_dec(v___x_3496_);
-if (v___x_3491_ == 0)
-{
-lean_object* v___x_3498_; 
-v___x_3498_ = lean_unsigned_to_nat(0u);
-v___y_3441_ = v___x_3497_;
-v___y_3442_ = v___x_3498_;
-goto v___jp_3440_;
-}
-else
-{
-lean_object* v___x_3499_; 
-v___x_3499_ = lean_unsigned_to_nat(1u);
-v___y_3441_ = v___x_3497_;
-v___y_3442_ = v___x_3499_;
-goto v___jp_3440_;
-}
-}
-else
-{
-lean_dec(v_a_3485_);
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3494_;
-}
-}
-}
-else
-{
-lean_dec(v_a_3485_);
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3490_;
-}
-}
-else
-{
-lean_dec(v_a_3485_);
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3488_;
-}
-}
-else
-{
-lean_object* v_a_3502_; lean_object* v___x_3504_; uint8_t v_isShared_3505_; uint8_t v_isSharedCheck_3509_; 
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-v_a_3502_ = lean_ctor_get(v___x_3484_, 0);
-v_isSharedCheck_3509_ = !lean_is_exclusive(v___x_3484_);
-if (v_isSharedCheck_3509_ == 0)
-{
-v___x_3504_ = v___x_3484_;
-v_isShared_3505_ = v_isSharedCheck_3509_;
-goto v_resetjp_3503_;
-}
-else
-{
-lean_inc(v_a_3502_);
-lean_dec(v___x_3484_);
-v___x_3504_ = lean_box(0);
-v_isShared_3505_ = v_isSharedCheck_3509_;
-goto v_resetjp_3503_;
-}
-v_resetjp_3503_:
-{
-lean_object* v___x_3507_; 
-if (v_isShared_3505_ == 0)
-{
-v___x_3507_ = v___x_3504_;
-goto v_reusejp_3506_;
-}
-else
-{
-lean_object* v_reuseFailAlloc_3508_; 
-v_reuseFailAlloc_3508_ = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(v_reuseFailAlloc_3508_, 0, v_a_3502_);
-v___x_3507_ = v_reuseFailAlloc_3508_;
-goto v_reusejp_3506_;
-}
-v_reusejp_3506_:
-{
-return v___x_3507_;
-}
-}
-}
-}
-else
-{
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3483_;
-}
-}
-else
-{
-lean_dec(v_a_3477_);
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3481_;
-}
-}
-else
-{
-lean_object* v_a_3510_; lean_object* v___x_3512_; uint8_t v_isShared_3513_; uint8_t v_isSharedCheck_3517_; 
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-v_a_3510_ = lean_ctor_get(v___x_3476_, 0);
-v_isSharedCheck_3517_ = !lean_is_exclusive(v___x_3476_);
-if (v_isSharedCheck_3517_ == 0)
-{
-v___x_3512_ = v___x_3476_;
-v_isShared_3513_ = v_isSharedCheck_3517_;
-goto v_resetjp_3511_;
-}
-else
-{
-lean_inc(v_a_3510_);
-lean_dec(v___x_3476_);
-v___x_3512_ = lean_box(0);
-v_isShared_3513_ = v_isSharedCheck_3517_;
-goto v_resetjp_3511_;
-}
-v_resetjp_3511_:
-{
-lean_object* v___x_3515_; 
-if (v_isShared_3513_ == 0)
-{
-v___x_3515_ = v___x_3512_;
-goto v_reusejp_3514_;
-}
-else
-{
-lean_object* v_reuseFailAlloc_3516_; 
-v_reuseFailAlloc_3516_ = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(v_reuseFailAlloc_3516_, 0, v_a_3510_);
-v___x_3515_ = v_reuseFailAlloc_3516_;
-goto v_reusejp_3514_;
-}
-v_reusejp_3514_:
-{
-return v___x_3515_;
-}
-}
-}
-}
-else
-{
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3475_;
-}
-}
-else
-{
-lean_dec(v_a_3469_);
-lean_dec(v_a_3461_);
-return v___x_3473_;
-}
-}
-else
-{
-lean_object* v_a_3518_; lean_object* v___x_3520_; uint8_t v_isShared_3521_; uint8_t v_isSharedCheck_3525_; 
-lean_dec(v_a_3461_);
-v_a_3518_ = lean_ctor_get(v___x_3468_, 0);
-v_isSharedCheck_3525_ = !lean_is_exclusive(v___x_3468_);
-if (v_isSharedCheck_3525_ == 0)
-{
-v___x_3520_ = v___x_3468_;
-v_isShared_3521_ = v_isSharedCheck_3525_;
-goto v_resetjp_3519_;
-}
-else
-{
-lean_inc(v_a_3518_);
-lean_dec(v___x_3468_);
-v___x_3520_ = lean_box(0);
-v_isShared_3521_ = v_isSharedCheck_3525_;
-goto v_resetjp_3519_;
-}
-v_resetjp_3519_:
-{
-lean_object* v___x_3523_; 
-if (v_isShared_3521_ == 0)
-{
-v___x_3523_ = v___x_3520_;
-goto v_reusejp_3522_;
-}
-else
-{
-lean_object* v_reuseFailAlloc_3524_; 
-v_reuseFailAlloc_3524_ = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(v_reuseFailAlloc_3524_, 0, v_a_3518_);
-v___x_3523_ = v_reuseFailAlloc_3524_;
-goto v_reusejp_3522_;
-}
-v_reusejp_3522_:
-{
-return v___x_3523_;
-}
-}
-}
-}
-else
-{
-lean_dec(v_a_3461_);
-return v___x_3467_;
-}
-}
-else
-{
-lean_dec(v_a_3461_);
-return v___x_3465_;
-}
-}
-else
-{
-lean_object* v_a_3526_; lean_object* v___x_3528_; uint8_t v_isShared_3529_; uint8_t v_isSharedCheck_3533_; 
-v_a_3526_ = lean_ctor_get(v___x_3460_, 0);
-v_isSharedCheck_3533_ = !lean_is_exclusive(v___x_3460_);
-if (v_isSharedCheck_3533_ == 0)
-{
-v___x_3528_ = v___x_3460_;
-v_isShared_3529_ = v_isSharedCheck_3533_;
-goto v_resetjp_3527_;
-}
-else
-{
-lean_inc(v_a_3526_);
-lean_dec(v___x_3460_);
-v___x_3528_ = lean_box(0);
-v_isShared_3529_ = v_isSharedCheck_3533_;
-goto v_resetjp_3527_;
-}
-v_resetjp_3527_:
-{
-lean_object* v___x_3531_; 
-if (v_isShared_3529_ == 0)
-{
-v___x_3531_ = v___x_3528_;
-goto v_reusejp_3530_;
-}
-else
-{
-lean_object* v_reuseFailAlloc_3532_; 
-v_reuseFailAlloc_3532_ = lean_alloc_ctor(1, 1, 0);
-lean_ctor_set(v_reuseFailAlloc_3532_, 0, v_a_3526_);
-v___x_3531_ = v_reuseFailAlloc_3532_;
-goto v_reusejp_3530_;
-}
-v_reusejp_3530_:
-{
-return v___x_3531_;
-}
-}
-}
-}
-else
-{
+v___x_3459_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3458_);
 return v___x_3459_;
-}
 }
 else
 {
 return v___x_3457_;
 }
-v___jp_3440_:
-{
-lean_object* v___x_3443_; 
-v___x_3443_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3439_);
-if (lean_obj_tag(v___x_3443_) == 0)
-{
-lean_object* v___x_3444_; lean_object* v___x_3445_; lean_object* v___x_3446_; lean_object* v___x_3447_; lean_object* v___x_3448_; lean_object* v___x_3449_; lean_object* v___x_3450_; lean_object* v___x_3451_; lean_object* v___x_3452_; lean_object* v___x_3453_; lean_object* v___x_3454_; 
-lean_dec_ref(v___x_3443_);
-v___x_3444_ = lean_nat_add(v___y_3441_, v___y_3442_);
-lean_dec(v___y_3441_);
-v___x_3445_ = ((lean_object*)(lp_aes__lean_main___closed__4));
-v___x_3446_ = l_Nat_reprFast(v___x_3444_);
-v___x_3447_ = lean_string_append(v___x_3445_, v___x_3446_);
-lean_dec_ref(v___x_3446_);
-v___x_3448_ = ((lean_object*)(lp_aes__lean_main___closed__5));
-v___x_3449_ = lean_string_append(v___x_3447_, v___x_3448_);
-v___x_3450_ = lean_obj_once(&lp_aes__lean_main___closed__6, &lp_aes__lean_main___closed__6_once, _init_lp_aes__lean_main___closed__6);
-v___x_3451_ = lean_string_append(v___x_3449_, v___x_3450_);
-v___x_3452_ = ((lean_object*)(lp_aes__lean_main___closed__7));
-v___x_3453_ = lean_string_append(v___x_3451_, v___x_3452_);
-v___x_3454_ = lp_aes__lean_IO_println___at___00testEncrypt_spec__0(v___x_3453_);
-if (lean_obj_tag(v___x_3454_) == 0)
-{
-lean_object* v___x_3455_; lean_object* v___x_3456_; 
-lean_dec_ref(v___x_3454_);
-v___x_3455_ = lean_cstr_to_nat("1000000000000000000");
-v___x_3456_ = lp_aes__lean_benchmarkEncrypt(v___x_3455_);
-return v___x_3456_;
 }
 else
 {
-return v___x_3454_;
+return v___x_3455_;
 }
 }
 else
 {
-lean_dec(v___y_3441_);
-return v___x_3443_;
+lean_dec(v___y_3442_);
+return v___x_3444_;
 }
 }
 }
 else
 {
-return v___x_3438_;
+return v___x_3439_;
 }
 }
 else
 {
-return v___x_3436_;
+return v___x_3437_;
 }
 }
 else
 {
-return v___x_3434_;
+return v___x_3435_;
 }
 }
 }
-LEAN_EXPORT lean_object* lp_aes__lean_main___boxed(lean_object* v_a_3534_){
+LEAN_EXPORT lean_object* lp_aes__lean_main___boxed(lean_object* v_a_3537_){
 _start:
 {
-lean_object* v_res_3535_; 
-v_res_3535_ = _lean_main();
-return v_res_3535_;
+lean_object* v_res_3538_; 
+v_res_3538_ = _lean_main();
+return v_res_3538_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);
