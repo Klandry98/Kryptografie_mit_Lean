@@ -1,13 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["92966bc0d3bc4b8f.olean"],
+ {"o": ["c116319ffe8deccf.olean"],
   "m": false,
   "i": "446e513197f331dc.ilean",
-  "c": "81e5b578957f33bd.c"},
+  "c": "41595886c87ab502.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=/home/landry/aes_lean/.lake/build/lib/lean /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/lean /home/landry/aes_lean/AES/Transforms.lean -o /home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.olean -i /home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.ilean -c /home/landry/aes_lean/.lake/build/ir/AES/Transforms.c --setup /home/landry/aes_lean/.lake/build/ir/AES/Transforms.setup.json --json",
+   ".> LEAN_PATH=/home/landry/aes_lean/.lake/build/lib/lean /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1/bin/lean /home/landry/aes_lean/AES/Transforms.lean -o /home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.olean -i /home/landry/aes_lean/.lake/build/lib/lean/AES/Transforms.ilean -c /home/landry/aes_lean/.lake/build/ir/AES/Transforms.c --setup /home/landry/aes_lean/.lake/build/ir/AES/Transforms.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["AES.Transforms:deps",
@@ -15,20 +15,20 @@
      [["aes_lean/AES:extraDep", [["@aes_lean:extraDep", "00000000000006bb"]]],
       ["imports",
        [["AES.Types transitive imports (legacy)", "00000000000006bb"],
-        ["AES.Types:importAllArts", "2db01078995f94e0"],
-        ["AES.SBox transitive imports (legacy)", "3b7e3686fca57e73"],
-        ["AES.SBox:importAllArts", "cea8e739b97add27"]]]]],
+        ["AES.Types:importAllArts", "cfa77faf828fed7a"],
+        ["AES.SBox transitive imports (legacy)", "126292a3cc520d8c"],
+        ["AES.SBox:importAllArts", "9a9ffd123987e210"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
-   "2c8d2623007dfc36"],
+  ["Lean 4.32.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697",
+   "9f30fb205c97627b"],
   ["/home/landry/aes_lean/AES/Transforms.lean", "1d7c7627bd45fa75"],
   ["options", [["-DautoImplicit=false", "4a85acb881fd49d0"]]],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: AES.Transforms", "e3eab6153328d799"],
   ["Package.id?: (some aes_lean)", "ce6142766c141aac"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "05eb4a3a086f3390"}
+ "depHash": "c73c58a3aec89244"}

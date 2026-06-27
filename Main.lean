@@ -379,11 +379,17 @@ def runRoundtrip : Bool :=
 def benchmarkEncrypt (n : Nat) : IO Unit := do
   let key := hexToBlock "2b7e151628aed2a6abf7158809cf4f3c"
   let pt  := hexToBlock "3243f6a8885a308d313198a2e0370734"
-  let _   : Block := (List.range n).foldl (fun _ _ => aesEncrypt pt key) pt
-  IO.println s!"{n} Verschlüsselungen abgeschlossen"
-
--- ═══════════════════════════════════════════════
--- Hauptprogramm
+  let start ← IO.monoMsNow
+  -- Rein funktionale Faltung; IO.lazyPure kapselt sie als IO-Aktion,
+  -- der folgende Bind (←) erzwingt die vollständige Auswertung VOR dem
+  -- zweiten Zeitstempel:
+  let final ← IO.lazyPure (fun _ => (List.range n).foldl (fun acc _ => aesEncrypt acc key) pt)
+  let stop ← IO.monoMsNow
+  let ms := stop - start
+  IO.println s!"{n} Verschlüsselungen in {ms} ms (Prüfsumme: {blockToHex final})"
+  if ms > 0 then
+    let mbPerSec := ((n * 16).toFloat / 1000000.0) / (ms.toFloat / 1000.0)
+    IO.println s!"Durchsatz: {mbPerSec} MB/s"
 -- ═══════════════════════════════════════════════
 
 def main : IO Unit := do
@@ -415,5 +421,5 @@ def main : IO Unit := do
   let expected := 14 + 42 + 126 + 126 + 1
   IO.println ""
   IO.println s!"═══ Gesamt: {total}/{expected} bestanden ═══"
-  benchmarkEncrypt 1000000000000000000
+  benchmarkEncrypt 1000000
   IO.println "Benchmark abgeschlossen"

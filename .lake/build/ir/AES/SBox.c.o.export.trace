@@ -1,17 +1,17 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "2973bbadf853d864.o",
+ "outputs": "f97d099a9c34fb3f.o",
  "log":
  [{"message":
-   ".> /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/bin/clang -c -o /home/landry/aes_lean/.lake/build/ir/AES/SBox.c.o.export /home/landry/aes_lean/.lake/build/ir/AES/SBox.c -I /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/include -fstack-clash-protection -fdata-sections -ffunction-sections -fPIC -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2 -nostdinc -isystem /home/landry/.elan/toolchains/leanprover--lean4---v4.30.0-rc2/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
+   ".> /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1/bin/clang -c -o /home/landry/aes_lean/.lake/build/ir/AES/SBox.c.o.export /home/landry/aes_lean/.lake/build/ir/AES/SBox.c -I /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1/include -fstack-clash-protection -ffp-contract=off -fdata-sections -ffunction-sections -fPIC -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1 -nostdinc -isystem /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
    "level": "trace"}],
  "inputs":
  [["AES.SBox:c",
    [["/home/landry/aes_lean/.lake/build/ir/AES/SBox.c", "6eab1159f0106242"],
-    ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
-     "2c8d2623007dfc36"]]],
-  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
-   "2c8d2623007dfc36"],
+    ["Lean 4.32.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697",
+     "9f30fb205c97627b"]]],
+  ["Lean 4.32.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697",
+   "9f30fb205c97627b"],
   ["traceArgs: #[-O3, -DNDEBUG, -DLEAN_EXPORTING]", "c1efb66122fb2b9a"],
   ["x86_64-unknown-linux-gnu", "53a0e8937c307c28"]],
- "depHash": "e813666cf5d3afff"}
+ "depHash": "0a6c794eca57ba35"}

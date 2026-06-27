@@ -195,7 +195,16 @@ theorem getRow_stateFromRows (r0 r1 r2 r3 : Array Byte)
     rw [getElem!_ofFn4' _ i hi1, getElem!_ofFn4 _ k hk]
     rw [getElem!_pos _ _ (by rw [hrk]; exact hi1)]
 
+/-- Das 4-elementige Array-Literal an fester Position auflösen. -/
+theorem lit4_get! (r0 r1 r2 r3 : Array Byte) :
+    (#[r0, r1, r2, r3])[0]! = r0 ∧
+    (#[r0, r1, r2, r3])[1]! = r1 ∧
+    (#[r0, r1, r2, r3])[2]! = r2 ∧
+    (#[r0, r1, r2, r3])[3]! = r3 := by
+  refine ⟨?_, ?_, ?_, ?_⟩ <;> rfl
+
 /-- stateFromRows rekonstruiert s aus seinen vier Zeilen (unter WellFormed). -/
+
 theorem stateFromRows_getRow (s : State) (hs : WellFormed s) :
     stateFromRows (getRow s 0) (getRow s 1) (getRow s 2) (getRow s 3) = s := by
   obtain ⟨hsize, hrows⟩ := hs
@@ -212,37 +221,83 @@ theorem stateFromRows_getRow (s : State) (hs : WellFormed s) :
     · intro i hi1 hi2
       rw [Array.size_ofFn] at hi1
       rw [Array.getElem_ofFn]
+      have hsj : s[j]! = s[j] := getElem!_pos s j (by rw [hsize]; exact hj2)
       match i, hi1 with
       | 0, _ =>
-        show ((#[Array.ofFn fun j => s[j.val]![0]!, Array.ofFn fun j => s[j.val]![1]!,
-                 Array.ofFn fun j => s[j.val]![2]!, Array.ofFn fun j => s[j.val]![3]!]).get! 0)[j]! = s[j][0]
-        sorry
-      | _, _ => sorry
-
+        have h1 : (#[Array.ofFn (n:=4) (fun j => s[j.val]![0]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![1]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![2]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![3]!)])[0]!
+                   = Array.ofFn (n:=4) (fun j => s[j.val]![0]!) := rfl
+        rw [h1, getElem!_ofFn4 _ j hj2, hsj]
+        exact getElem!_pos s[j] 0 hi2
+      | 1, _ =>
+        have h1 : (#[Array.ofFn (n:=4) (fun j => s[j.val]![0]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![1]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![2]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![3]!)])[1]!
+                   = Array.ofFn (n:=4) (fun j => s[j.val]![1]!) := rfl
+        rw [h1, getElem!_ofFn4 _ j hj2, hsj]
+        exact getElem!_pos s[j] 1 hi2
+      | 2, _ =>
+        have h1 : (#[Array.ofFn (n:=4) (fun j => s[j.val]![0]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![1]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![2]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![3]!)])[2]!
+                   = Array.ofFn (n:=4) (fun j => s[j.val]![2]!) := rfl
+        rw [h1, getElem!_ofFn4 _ j hj2, hsj]
+        exact getElem!_pos s[j] 2 hi2
+      | 3, _ =>
+        have h1 : (#[Array.ofFn (n:=4) (fun j => s[j.val]![0]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![1]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![2]!),
+                     Array.ofFn (n:=4) (fun j => s[j.val]![3]!)])[3]!
+                   = Array.ofFn (n:=4) (fun j => s[j.val]![3]!) := rfl
+        rw [h1, getElem!_ofFn4 _ j hj2, hsj]
+        exact getElem!_pos s[j] 3 hi2
 
 /-- ShiftRows invertierbar unter Wohlgeformtheit. -/
 theorem invShiftRows_shiftRows (s : State) (hs : WellFormed s) :
     invShiftRows (shiftRows s) = s := by
   have hwf := hs
   obtain ⟨hsize, hrows⟩ := hs
-  have L0 : (getRow s 0).size = 4 := by dsimp [getRow]; rw [Array.size_ofFn]
   have L1 : (getRow s 1).size = 4 := by dsimp [getRow]; rw [Array.size_ofFn]
   have L2 : (getRow s 2).size = 4 := by dsimp [getRow]; rw [Array.size_ofFn]
   have L3 : (getRow s 3).size = 4 := by dsimp [getRow]; rw [Array.size_ofFn]
-  have R1 : (rotateLeft (getRow s 1) 1).size = 4 := by dsimp [rotateLeft]; rw [Array.size_ofFn]
-  have R2 : (rotateLeft (getRow s 2) 2).size = 4 := by dsimp [rotateLeft]; rw [Array.size_ofFn]
-  have R3 : (rotateLeft (getRow s 3) 3).size = 4 := by dsimp [rotateLeft]; rw [Array.size_ofFn]
+  -- Groessen der vier Zeilen des shiftRows-Konstrukts (fuer getRow_stateFromRows):
+  have S0 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[0]!.size = 4 := by
+    show (getRow s 0).size = 4
+    dsimp [getRow]; rw [Array.size_ofFn]
+  have S1 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[1]!.size = 4 := by
+    show (rotateLeft (getRow s 1) 1).size = 4
+    dsimp [rotateLeft]; rw [Array.size_ofFn]
+  have S2 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[2]!.size = 4 := by
+    show (rotateLeft (getRow s 2) 2).size = 4
+    dsimp [rotateLeft]; rw [Array.size_ofFn]
+  have S3 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[3]!.size = 4 := by
+    show (rotateLeft (getRow s 3) 3).size = 4
+    dsimp [rotateLeft]; rw [Array.size_ofFn]
   unfold invShiftRows shiftRows
-  -- Die vier getRow-Aufrufe auf das stateFromRows-Konstrukt aufloesen.
-  -- rows = #[getRow s 0, rotateLeft.., rotateLeft.., rotateLeft..]
-  -- (#[..])[k]! ist fuer k=0..3 die jeweilige Zeile; Groesse 4 aus L0/R1/R2/R3.
-  rw [getRow_stateFromRows _ _ _ _ 0 (by decide) (by simpa using L0)]
-  rw [getRow_stateFromRows _ _ _ _ 1 (by decide) (by simpa using R1)]
-  rw [getRow_stateFromRows _ _ _ _ 2 (by decide) (by simpa using R2)]
-  rw [getRow_stateFromRows _ _ _ _ 3 (by decide) (by simpa using R3)]
-  -- (#[..])[k]! konkret auswerten:
-  simp only [List.getElem!_eq_getElem?_getD]  -- [PRUEFEN] ggf. weglassen; sonst rfl-artig
-  -- rotateRight macht rotateLeft rueckgaengig:
+  -- Schritt 1: getRow (stateFromRows ..) k  -->  #[..][k]!
+  rw [getRow_stateFromRows _ _ _ _ 0 (by decide) S0]
+  rw [getRow_stateFromRows _ _ _ _ 1 (by decide) S1]
+  rw [getRow_stateFromRows _ _ _ _ 2 (by decide) S2]
+  rw [getRow_stateFromRows _ _ _ _ 3 (by decide) S3]
+  -- Schritt 2: #[..][k]!  -->  konkrete Zeile (:= rfl)
+  have e0 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[0]! = getRow s 0 := rfl
+  have e1 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[1]! = rotateLeft (getRow s 1) 1 := rfl
+  have e2 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[2]! = rotateLeft (getRow s 2) 2 := rfl
+  have e3 : (#[getRow s 0, rotateLeft (getRow s 1) 1, rotateLeft (getRow s 2) 2,
+               rotateLeft (getRow s 3) 3])[3]! = rotateLeft (getRow s 3) 3 := rfl
+  rw [e0, e1, e2, e3]
+  -- Schritt 3: rotateRight (rotateLeft ..) rueckgaengig
   rw [rotateRight_rotateLeft (getRow s 1) L1 1]
   rw [rotateRight_rotateLeft (getRow s 2) L2 2]
   rw [rotateRight_rotateLeft (getRow s 3) L3 3]
@@ -252,7 +307,16 @@ theorem shiftRows_correct :
     IsCorrectInverse WellFormed shiftRows invShiftRows := by
   intro s hs; exact invShiftRows_shiftRows s hs
 
-/-- AddRoundKey zweimal mit demselben Schluessel = Identitaet. -/
+-- inner_addRK mit KORREKTEN Versionen:
+-- äußeres ofFn → Array Byte → getElem!_ofFn4'  (PRIME)
+-- inneres ofFn → Byte       → getElem!_ofFn4   (ohne Prime)
+theorem inner_addRK (s : State) (rk : Block) (j i : Nat) (hj : j < 4) (hi : i < 4) :
+    (Array.ofFn (n:=4) fun j => Array.ofFn (n:=4) fun i =>
+        s[j.val]![i.val]! ^^^ (blockToState rk)[j.val]![i.val]!)[j]![i]!
+      = s[j]![i]! ^^^ (blockToState rk)[j]![i]! := by
+  rw [getElem!_ofFn4' _ j hj]   -- PRIME: äußeres Array Byte
+  rw [getElem!_ofFn4 _ i hi]    -- ohne Prime: inneres Byte
+
 theorem addRoundKey_selfInverse (s : State) (rk : Block) (hs : WellFormed s) :
     addRoundKey (addRoundKey s rk) rk = s := by
   obtain ⟨hsize, hrows⟩ := hs
@@ -261,17 +325,18 @@ theorem addRoundKey_selfInverse (s : State) (rk : Block) (hs : WellFormed s) :
   · rw [Array.size_ofFn]; exact hsize.symm
   · intro j hj1 hj2
     rw [hsize] at hj2
-    rw [getElem!_ofFn4' _ j hj2]
+    rw [Array.getElem_ofFn]
     apply Array.ext
     · rw [Array.size_ofFn]
       have hb : s[j]! = s[j] := getElem!_pos s j (by rw [hsize]; exact hj2)
       rw [← hb]; exact (hrows ⟨j, hj2⟩).symm
     · intro i hi1 hi2
       rw [Array.size_ofFn] at hi1
-      rw [getElem!_ofFn4 _ i hi1]
-      -- inneres ofFn der ZWEITEN Anwendung ist bereits via getElem!_ofFn4' /
-      -- getElem!_ofFn4 reduziert; uebrig: (s[j]![i]! ^^^ K) ^^^ K
-      exact xor_xor_cancel _ _
+      rw [Array.getElem_ofFn]
+      have hsj : s[j]! = s[j] := getElem!_pos s j (by rw [hsize]; exact hj2)
+      rw [inner_addRK s rk j i hj2 hi1]
+      rw [xor_xor_cancel, hsj]
+      exact getElem!_pos s[j] i hi2
 
 theorem addRoundKey_correct (rk : Block) :
     IsCorrectInverse WellFormed (addRoundKey · rk) (addRoundKey · rk) := by

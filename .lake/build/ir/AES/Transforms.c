@@ -642,7 +642,7 @@ goto v___jp_287_;
 v___jp_267_:
 {
 uint8_t v_aa_x27_271_; uint8_t v___x_272_; uint8_t v___x_273_; lean_object* v___x_274_; lean_object* v___x_275_; lean_object* v___x_277_; 
-v_aa_x27_271_ = lean_uint8_xor(v___y_269_, v___y_270_);
+v_aa_x27_271_ = lean_uint8_xor(v___y_268_, v___y_270_);
 v___x_272_ = lean_unbox(v_snd_262_);
 lean_dec(v_snd_262_);
 v___x_273_ = lean_uint8_shift_right(v___x_272_, v___x_266_);
@@ -667,7 +667,7 @@ goto v_reusejp_276_;
 v_reusejp_276_:
 {
 lean_object* v___x_278_; lean_object* v___x_280_; 
-v___x_278_ = lean_box(v___y_268_);
+v___x_278_ = lean_box(v___y_269_);
 if (v_isShared_260_ == 0)
 {
 lean_ctor_set(v___x_259_, 1, v___x_277_);
@@ -706,15 +706,15 @@ if (v___x_294_ == 0)
 {
 uint8_t v___x_295_; 
 v___x_295_ = 27;
-v___y_268_ = v___y_288_;
-v___y_269_ = v___x_293_;
+v___y_268_ = v___x_293_;
+v___y_269_ = v___y_288_;
 v___y_270_ = v___x_295_;
 goto v___jp_267_;
 }
 else
 {
-v___y_268_ = v___y_288_;
-v___y_269_ = v___x_293_;
+v___y_268_ = v___x_293_;
+v___y_269_ = v___y_288_;
 v___y_270_ = v___x_286_;
 goto v___jp_267_;
 }
