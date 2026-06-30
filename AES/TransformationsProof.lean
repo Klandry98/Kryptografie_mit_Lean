@@ -11,7 +11,6 @@ def IsCorrectInverse {α : Type _} (P : α → Prop) (T invT : α → α) : Prop
   ∀ s, P s → invT (T s) = s
 
 -- STUFE A: Byte-/Wort-Ebene
--- STUFE A: Byte-/Wort-Ebene
 
 theorem invSubByte_subByte (b : Byte) : invSubByte (subByte b) = b := by
   rcases b with ⟨v⟩; revert v; decide +native
@@ -119,6 +118,7 @@ theorem xor_xor_cancel : ∀ x k : Byte, (x ^^^ k) ^^^ k = x := by
 #print axioms invSubByte_subByte
 #print axioms invMatrix_mul_matrix_eq_id
 #print axioms xor_assoc_byte
+
 -- STUFE B: State-Ebene
 
 -- B.1  SubBytes invertierbar (universell, map-Komposition)

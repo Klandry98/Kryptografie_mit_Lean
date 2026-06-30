@@ -2,13 +2,12 @@
   Main.lean
   AESAVS-Validierung: GFSbox, KeySbox, VarTxt, VarKey
   Bachelorarbeit: Kryptografie mit Lean
+  Landry Kamdoum Tedjouka
 -/
 import AES.Cipher
 set_option maxRecDepth 1000
 
--- ═══════════════════════════════════════════════
 -- Hilfsfunktion: Testvektor prüfen
--- ═══════════════════════════════════════════════
 
 def testEncrypt (name : String) (keyHex ptHex ctHex : String) : IO Bool := do
   let got := aesEncrypt (hexToBlock ptHex) (hexToBlock keyHex)
@@ -22,9 +21,8 @@ def testDecrypt (name : String) (keyHex ptHex ctHex : String) : IO Bool := do
   unless ok do IO.println s!"  FAIL {name}: expected {ptHex}, got {blockToHex got}"
   pure ok
 
--- ═══════════════════════════════════════════════
 -- GFSbox Tests (7 Vektoren, Key = 0)
--- ═══════════════════════════════════════════════
+
 def runGFSbox : IO Nat :=
   let zeroKey := "00000000000000000000000000000000"
   let tests : List (IO Bool) := [
@@ -45,9 +43,7 @@ def runGFSbox : IO Nat :=
   ]
   tests.foldlM (fun n t => do let b ← t; pure (n + if b then 1 else 0)) 0
 
--- ═══════════════════════════════════════════════
 -- KeySbox Tests (21 Vektoren, PT = 0)
--- ═══════════════════════════════════════════════
 
 def runKeySbox : IO Nat :=
   let zeroPt := "00000000000000000000000000000000"
@@ -97,9 +93,8 @@ def runKeySbox : IO Nat :=
   ]
   tests.foldlM (fun n t => do let b ← t; pure (n + if b then 1 else 0)) 0
 
--- ═══════════════════════════════════════════════
 -- VarTxt Tests (126 Vektoren, Key = 0)
--- ═══════════════════════════════════════════════
+
 def runVarTxt : IO Nat :=
   let zeroKey := "00000000000000000000000000000000"
   let tests : List (IO Bool) := [
@@ -232,9 +227,9 @@ def runVarTxt : IO Nat :=
   ]
   tests.foldlM (fun n t => do let b ← t; pure (n + if b then 1 else 0)) 0
 
--- ═══════════════════════════════════════════════
+
 -- VarKey Tests (126 Vektoren, PT = 0)
--- ═══════════════════════════════════════════════
+
 def runVarKey : IO Nat :=
   let zeroPt := "00000000000000000000000000000000"
   let tests : List (IO Bool) := [
@@ -367,9 +362,7 @@ def runVarKey : IO Nat :=
   ]
   tests.foldlM (fun n t => do let b ← t; pure (n + if b then 1 else 0)) 0
 
--- ═══════════════════════════════════════════════
 -- Roundtrip Test (pure)
--- ═══════════════════════════════════════════════
 
 def runRoundtrip : Bool :=
   let key := hexToBlock "2b7e151628aed2a6abf7158809cf4f3c"
@@ -390,7 +383,7 @@ def benchmarkEncrypt (n : Nat) : IO Unit := do
   if ms > 0 then
     let mbPerSec := ((n * 16).toFloat / 1000000.0) / (ms.toFloat / 1000.0)
     IO.println s!"Durchsatz: {mbPerSec} MB/s"
--- ═══════════════════════════════════════════════
+
 
 def main : IO Unit := do
   IO.println "╔══════════════════════════════════════════════╗"
