@@ -1,0 +1,46 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["cfc98565953efd58.olean"],
+  "m": false,
+  "i": "caafff9e2b78715e.ilean",
+  "c": "88aa799bf9608b89.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=/home/landry/aes_lean/.lake/build/lib/lean /home/landry/.elan/toolchains/leanprover--lean4---v4.32.0-rc1/bin/lean /home/landry/aes_lean/AES/TransformationsProof.lean -o /home/landry/aes_lean/.lake/build/lib/lean/AES/TransformationsProof.olean -i /home/landry/aes_lean/.lake/build/lib/lean/AES/TransformationsProof.ilean -c /home/landry/aes_lean/.lake/build/ir/AES/TransformationsProof.c --setup /home/landry/aes_lean/.lake/build/ir/AES/TransformationsProof.setup.json --json",
+   "level": "trace"},
+  {"message":
+   "AES/TransformationsProof.lean:119:0: 'AESProofs.invSubByte_subByte' depends on axioms: [propext, Quot.sound, invSubByte_subByte._native.decide.ax_1_1]",
+   "level": "info"},
+  {"message":
+   "AES/TransformationsProof.lean:120:0: 'AESProofs.invMatrix_mul_matrix_eq_id' depends on axioms: [propext,\n Quot.sound,\n invMatrix_row0._native.decide.ax_1_1,\n invMatrix_row1._native.decide.ax_1_1,\n invMatrix_row2._native.decide.ax_1_1,\n invMatrix_row3._native.decide.ax_1_1]",
+   "level": "info"},
+  {"message":
+   "AES/TransformationsProof.lean:121:0: 'AESProofs.xor_assoc_byte' depends on axioms: [propext, Quot.sound]",
+   "level": "info"}],
+ "inputs":
+ [["AES.TransformationsProof:deps",
+   [["deps",
+     [["aes_lean/AESProofs:extraDep",
+       [["@aes_lean:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["AES.Types transitive imports (legacy)", "00000000000006bb"],
+        ["AES.Types:importAllArts", "cfa77faf828fed7a"],
+        ["AES.SBox transitive imports (legacy)", "126292a3cc520d8c"],
+        ["AES.SBox:importAllArts", "9a9ffd123987e210"],
+        ["AES.Transforms transitive imports (legacy)", "2a6d3230d5655c31"],
+        ["AES.Transforms:importAllArts", "cb601e830ec98cb8"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.32.0, commit b4812ae53eea93439ad5dce5a5c26591c31cb697",
+   "9f30fb205c97627b"],
+  ["/home/landry/aes_lean/AES/TransformationsProof.lean", "ce5327b61db3c774"],
+  ["options", [["-DautoImplicit=false", "4a85acb881fd49d0"]]],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: AES.TransformationsProof", "62fa20c49f82c0ff"],
+  ["Package.id?: (some aes_lean)", "ce6142766c141aac"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "8f14824ba40ee23f"}
